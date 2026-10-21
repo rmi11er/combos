@@ -1,0 +1,37 @@
+{
+  "version": "nonplayer_settlement_v1",
+  "scope": "NFL mapped non-player markets",
+  "moneyline": {
+    "full_game": {
+      "kalshi_and_polymarket": "team_win; tie resolves 0.50 per team",
+      "pinnacle": "two_way_no_draw; tie voids",
+      "normalization": "p_exchange=(1-p_tie)*p_pinnacle+0.5*p_tie",
+      "tie_probability": 0.01,
+      "overtime": true
+    },
+    "period": {
+      "kalshi_and_polymarket": "selected_period_team_outscores_opponent; tied period resolves No",
+      "pinnacle": "two_way_period_no_draw; tie voids",
+      "normalization": "p_exchange=(1-p_period_tie)*p_pinnacle",
+      "tie_probability": 0.05,
+      "overtime": false
+    }
+  },
+  "threshold_markets": {
+    "spreads": {"settlement": "strict half_point threshold", "push": false},
+    "totals": {"settlement": "strict half_point threshold", "push": false},
+    "team_totals": {"settlement": "strict half_point team_score threshold", "push": false}
+  },
+  "periods": {
+    "full_game": {"included_scoring": "all regulation and overtime"},
+    "first_half": {"included_scoring": "first and second quarters only", "overtime": false},
+    "first_quarter": {"included_scoring": "first quarter only", "overtime": false}
+  },
+  "exception_states": {
+    "postponed": "retain shadow fair; record source-specific continuation window",
+    "suspended": "retain shadow fair; record Pinnacle 12-hour versus exchange 48-hour policy",
+    "cancelled_or_forfeit": "retain shadow fair only as diagnostic; no live quote eligibility",
+    "venue_change": "retain shadow fair only as diagnostic; no live quote eligibility"
+  },
+  "live_execution": false
+}

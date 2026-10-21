@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "study_id": "nfl-2025-season-wildcard-divisional-history-v1",
+  "sport": "NFL",
+  "sport_id": 14,
+  "tournament_id": 31,
+  "trading_start_date": "2026-01-05",
+  "trading_end_date_inclusive": "2026-01-18",
+  "timezone": "America/Chicago",
+  "minimum_legs": 2,
+  "maximum_legs": 4,
+  "pregame_cutoff_seconds": 60,
+  "historical_pinnacle_bookmaker": "pinnacle+30",
+  "primary_scope": "Full-game non-player, distinct fixtures, original scheduled pregame proxy",
+  "other_scope": "Retain broad target-fixture combo classifications for subsequent comparisons",
+  "sources": {
+    "wild_card": "https://www.nfl.com/news/nfl-reveals-2026-wild-card-weekend-schedule",
+    "divisional": "https://www.nfl.com/news/nfl-announces-schedule-for-upcoming-2025-divisional-round"
+  },
+  "fixtures": [
+    {"round": "wild_card", "away": "Los Angeles Rams", "away_code": "LAR", "home": "Carolina Panthers", "home_code": "CAR", "scheduled_start": "2026-01-10T16:30:00-05:00"},
+    {"round": "wild_card", "away": "Green Bay Packers", "away_code": "GB", "home": "Chicago Bears", "home_code": "CHI", "scheduled_start": "2026-01-10T20:00:00-05:00"},
+    {"round": "wild_card", "away": "Buffalo Bills", "away_code": "BUF", "home": "Jacksonville Jaguars", "home_code": "JAX", "scheduled_start": "2026-01-11T13:00:00-05:00"},
+    {"round": "wild_card", "away": "San Francisco 49ers", "away_code": "SF", "home": "Philadelphia Eagles", "home_code": "PHI", "scheduled_start": "2026-01-11T16:30:00-05:00"},
+    {"round": "wild_card", "away": "Los Angeles Chargers", "away_code": "LAC", "home": "New England Patriots", "home_code": "NE", "scheduled_start": "2026-01-11T20:00:00-05:00"},
+    {"round": "wild_card", "away": "Houston Texans", "away_code": "HOU", "home": "Pittsburgh Steelers", "home_code": "PIT", "scheduled_start": "2026-01-12T20:00:00-05:00"},
+    {"round": "divisional", "away": "Buffalo Bills", "away_code": "BUF", "home": "Denver Broncos", "home_code": "DEN", "scheduled_start": "2026-01-17T16:30:00-05:00"},
+    {"round": "divisional", "away": "San Francisco 49ers", "away_code": "SF", "home": "Seattle Seahawks", "home_code": "SEA", "scheduled_start": "2026-01-17T20:00:00-05:00"},
+    {"round": "divisional", "away": "Houston Texans", "away_code": "HOU", "home": "New England Patriots", "home_code": "NE", "scheduled_start": "2026-01-18T15:00:00-05:00"},
+    {"round": "divisional", "away": "Los Angeles Rams", "away_code": "LAR", "home": "Chicago Bears", "home_code": "CHI", "scheduled_start": "2026-01-18T18:30:00-05:00"}
+  ]
+}

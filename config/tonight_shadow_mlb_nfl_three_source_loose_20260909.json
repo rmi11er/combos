@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "status": "shadow_only_locked_research_configuration",
+  "live_enabled": false,
+  "automatic_promotion": false,
+  "slate": "current_week_mlb_nfl",
+  "sports": ["MLB", "NFL"],
+  "capital_dollars": 10000,
+  "risk_limits_dollars": {
+    "per_contract": 500,
+    "per_combo": 500,
+    "per_fixture": 1000,
+    "maximum_committed": 10000,
+    "maximum_ticket_gross_liability": 250
+  },
+  "moneyline_offset": {
+    "enabled": true,
+    "policy_ticket_cap_floor_dollars": 50,
+    "eligible_scope": "exact_full_game_moneyline_distinct_fixture_team_match",
+    "net_contract_and_fixture_risk_buckets": true,
+    "cash_collateral_credit": false,
+    "partial_or_ambiguous_match": "gross_risk_only"
+  },
+  "fair_model": {
+    "name": "liquidity_weighted_kalshi_polymarket_pinnacle",
+    "required_sources": ["kalshi", "polymarket", "pinnacle"],
+    "blend": "liquidity_weighted_interval_point_and_bounds",
+    "depth_exponent": 0.5,
+    "maximum_venue_weight": 0.6,
+    "polymarket_score_multiplier": 1.5,
+    "pinnacle_score_multiplier": 0.5,
+    "pinnacle_weight_cap": 0.2,
+    "kalshi_skew_prior": "stronger_taker_fees_can_skew_kalshi_book",
+    "kalshi_only_control": true,
+    "pinnacle_delay_seconds": 30,
+    "pinnacle_max_age_seconds": 90,
+    "exchange_max_age_seconds": 15,
+    "historical_pm_depth_imputation": false,
+    "historical_pinnacle_limit_imputation": false
+  },
+  "edge": {
+    "basis": "point",
+    "minimum_net_edge_after_fee": 0.003,
+    "unit": "dollars_per_combo_contract",
+    "dynamic_edge": false,
+    "marginal_reserve_fraction": 0
+  },
+  "correlation": {
+    "engine": "combo_correlation_v1_shadow",
+    "pricing_charge": "enabled_when_available",
+    "rho_baseline": 0.05,
+    "unmodeled_higher_order_dependence": "retain_conservative_fixture_and_combo_caps"
+  },
+  "scope": {
+    "pregame_only": true,
+    "pregame_cutoff_seconds": 60,
+    "minimum_legs": 2,
+    "maximum_legs": 4,
+    "distinct_fixtures": true,
+    "full_game": true,
+    "player_props": false,
+    "supported_markets": ["moneyline", "spread", "total", "team_total"]
+  },
+  "timing": {
+    "maximum_processing_lag_seconds": 2,
+    "maximum_combo_book_age_seconds": 5,
+    "quote_lifetime_seconds": 3,
+    "markout_horizons_seconds": [5, 30, 120],
+    "markout_grace_seconds": 5,
+    "timezone": "America/Chicago"
+  },
+  "last_look": {
+    "enabled": true,
+    "max_fair_move_cents": 1.0,
+    "measurement": "absolute liquidity-weighted three-source interval point move from quote publication to confirmation",
+    "on_breach": "reject_confirmation_and_cancel_reservation",
+    "shadow_only": true
+  },
+  "fees_and_units": {
+    "fee_basis": "dated_series_terms_required",
+    "kalshi_balance_precision": ".0001",
+    "fee_rounding": "exchange_fee_engine_with_explicit_balance_precision",
+    "unknown_or_unverified_fee_terms": "halt"
+  },
+  "risk_guards": {
+    "creator_blacklist_before_admission": true,
+    "stale_source_halt": true,
+    "source_disagreement_halt": true,
+    "unknown_payoff_mapping_halt": true,
+    "unmapped_leg_halt": true,
+    "risk_multiplier_mode": "minimum_source_and_leg_multiplier",
+    "defensive_regime_multiplier": 0.5
+  },
+  "execution": {
+    "mode": "shadow",
+    "orders_submitted": false,
+    "fill_assumption": "record_public_prints_and_shadow_quotes_separately",
+    "queue_or_fill_elasticity_model": "not_yet_calibrated"
+  },
+  "promotion_gates": [
+    "all_three_source_active_intersection",
+    "exact_pinnacle_payoff_and_selector_review",
+    "causal_timestamp_and_delay_validation",
+    "creator_blacklist_review",
+    "forward_fill_and_markout_validation",
+    "offset_ledger_reconciliation",
+    "correlation_charge_validation"
+  ],
+  "notes": [
+    "This locks the research/shadow policy only; it does not change live risk limits or enable order submission.",
+    "The existing current NFL capture has Pinnacle mapping blockers, so three-source pricing must fail closed until reviewed.",
+    "The weighting values are the repository's reviewed weighting baseline; the Kalshi-only control remains for paired diagnostics.",
+    "Last-look fair movement is measured at confirmation; a breach cancels the shadow reservation and rejects the fill."
+  ]
+}

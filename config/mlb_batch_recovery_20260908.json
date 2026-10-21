@@ -1,0 +1,23 @@
+{
+  "cwd": "../combos",
+  "batch_root": "runs/mlb_historical_20260907/dated_fee_primary",
+  "command": [
+    ".venv/bin/python",
+    "-u",
+    "scripts/mlb_historical_batch.py",
+    "--plan",
+    "config/mlb_validation_20260907_expanded.json",
+    "--fee-scenario-dir",
+    "runs/mlb_historical_20260907/fee_scenarios",
+    "--out",
+    "runs/mlb_historical_20260907/dated_fee_primary",
+    "--max-metadata-requests",
+    "15000",
+    "--wait-timeout-seconds",
+    "172800",
+    "--execute"
+  ],
+  "max_stage_attempts": 2,
+  "attach_identity": "Tue Sep  8 21:31:09 2026     .venv/bin/python -u scripts/mlb_historical_batch.py --plan config/mlb_validation_20260907_expanded.json --fee-scenario-dir runs/mlb_historical_20260907/fee_scenarios --out runs/mlb_historical_20260907/dated_fee_primary --max-metadata-requests 15000 --wait-timeout-seconds 172800 --execute",
+  "purpose": "Recover exact public-request exhaustion only; same frozen generation, persisted attempts and per-attempt request budget."
+}

@@ -1,0 +1,16 @@
+{
+  "models": {
+    "captured_sharp_peer": {},
+    "equal_score_prior": {"polymarket_score_multiplier": 1, "pinnacle_score_multiplier": 1},
+    "stronger_sharp_prior": {"polymarket_score_multiplier": 3, "pinnacle_score_multiplier": 3},
+    "delayed_pinnacle_light": {"polymarket_score_multiplier": 1.5, "pinnacle_score_multiplier": 0.5, "pinnacle_weight_cap": 0.2}
+  },
+  "quote_policy": {
+    "reserve_fraction": 0,
+    "edge_per_combo": 0.003,
+    "native_stake_usd_scale": 1,
+    "capacity_mode": "all_admitted_fill_no_release",
+    "capital_dollars": 10000,
+    "caps": {"contract": 1000, "combo": 1000, "fixture": 1000}
+  }
+}

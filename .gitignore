@@ -1,0 +1,22 @@
+.venv/
+__pycache__/
+.pytest_cache/
+data/
+runs/
+output/*.csv
+output/*.log
+output/creator_*.json
+.DS_Store
+
+# Counterparty (hashed) identifiers and large generated artifacts
+output/rfq_sniffer/
+output/creator_*.json
+output/cfb_trade_opportunities.csv
+output/raw_input_sha256.jsonl
+output/archive/
+:memory:*
+.agents/
+*.db
+*.sqlite*
+.env
+.env.*

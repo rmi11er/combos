@@ -1,0 +1,143 @@
+{
+  "study_id": "mlb-source-disagreement-20260907-v2-expanded",
+  "sport": "mlb",
+  "timezone": "America/Chicago",
+  "date_selection": "Every second complete day from July 1 through August 30; dates frozen before older outcomes inspected. Initial five screening dates are a subset.",
+  "dates": {
+    "2026-07-01": "development",
+    "2026-07-03": "development",
+    "2026-07-05": "development",
+    "2026-07-07": "development",
+    "2026-07-09": "development",
+    "2026-07-11": "development",
+    "2026-07-13": "development",
+    "2026-07-15": "development",
+    "2026-07-17": "development",
+    "2026-07-19": "development",
+    "2026-07-21": "development",
+    "2026-07-23": "development",
+    "2026-07-25": "development",
+    "2026-07-27": "development",
+    "2026-07-29": "development",
+    "2026-07-31": "development",
+    "2026-08-02": "validation",
+    "2026-08-04": "validation",
+    "2026-08-06": "validation",
+    "2026-08-08": "validation",
+    "2026-08-10": "validation",
+    "2026-08-12": "validation",
+    "2026-08-14": "validation",
+    "2026-08-16": "validation",
+    "2026-08-18": "validation",
+    "2026-08-20": "validation",
+    "2026-08-22": "validation",
+    "2026-08-24": "validation",
+    "2026-08-26": "validation",
+    "2026-08-28": "validation",
+    "2026-08-30": "validation",
+    "2026-09-05": "previously_inspected_reference"
+  },
+  "scope": {
+    "minimum_legs": 2,
+    "maximum_legs": 4,
+    "distinct_fixtures": true,
+    "full_game": true,
+    "player_props": false,
+    "pregame_buffer_seconds": 60,
+    "trade_side": "sell_combo_yes",
+    "maximum_yes_premium_dollars": null,
+    "combo_percentage_value_restriction": null
+  },
+  "primary_models": [
+    "kalshi",
+    "polymarket",
+    "exchange_blend_equal",
+    "exchange_blend_pm75"
+  ],
+  "fixed_leg_probability_blends": {
+    "exchange_blend_equal": {
+      "kalshi": 0.5,
+      "polymarket": 0.5
+    },
+    "exchange_blend_pm75": {
+      "kalshi": 0.25,
+      "polymarket": 0.75
+    }
+  },
+  "pinnacle_models": {
+    "status": "unavailable_until_MLB_history_access_and_mapping_verified",
+    "requested": [
+      "pinnacle",
+      "blend",
+      "stronger_pinnacle"
+    ],
+    "delay_seconds": 30
+  },
+  "entry_basis": "point",
+  "minimum_net_edge_per_share": 0.003,
+  "baseline_limits": {
+    "capital_dollars": 10000,
+    "per_contract_dollars": 100,
+    "per_combo_dollars": 100,
+    "per_fixture_dollars": 250
+  },
+  "historical_inputs": {
+    "exchange_publication_allowance_seconds": 60,
+    "missing_PM_depth": "equal_to_Kalshi_historical_scenario_only",
+    "missing_PM_spread": "Kalshi_raw_spread_proxy_historical_only",
+    "fees": "effective_date_evidence_required_for_verified_results; explicit_unverified_scenarios_separate",
+    "PM_price": "archived_price_point_not_certified_book_midpoint"
+  },
+  "evaluation": {
+    "complete_days_only": true,
+    "common_source_intersection": true,
+    "purge_shared_fixtures_between_development_and_validation": true,
+    "sampled_dates_are_independent_funded_day_experiments": true,
+    "no_calendar_gap_zero_returns": true,
+    "minimum_complete_resolved_slates_for_descriptive_sharpe": 20,
+    "sharpe_annualization": null,
+    "disagreement_combo_cents_bands": [
+      0.5,
+      2
+    ],
+    "primary_metrics": [
+      "paired_Brier",
+      "paired_log_loss",
+      "net_seller_PnL",
+      "unknown_outcome_bounds",
+      "Pnl_per_resolved_NO_cash",
+      "peak_committed_cash",
+      "fixture_concentration",
+      "drawdown"
+    ],
+    "no_print_iid_significance": true,
+    "execution_assumption": "hypothetical_sells_at_public_print_prices; no_RFQ_acceptance_inferred"
+  },
+  "promotion": {
+    "automatic": false,
+    "required": [
+      "multiple_independent_slates",
+      "fee_and_payoff_validation",
+      "out_of_sample_robustness",
+      "sensitivity_to_source_timing",
+      "acceptable_concentration_and_drawdown",
+      "shadow_quote_lifecycle_validation"
+    ]
+  },
+  "prior_screen_plan_sha256": "ef1c977f4c115dbfc0082c03cd59ff39a0a0aa0cee99cb5962c1d4d2e12bb4ff",
+  "entry_threshold_experiments": {
+    "combo_contract_cents": [
+      0,
+      0.1,
+      0.3,
+      0.5
+    ],
+    "per_leg_cents": [
+      0.3
+    ],
+    "sell_every_priced_print": true,
+    "all_net_of_execution_fees": true,
+    "selection_policy": "fixed_grid_not_optimized_on_evaluation_results"
+  },
+  "risk_selection": "Do not set risk limits from the September5 sweep or five-date screen; evaluate broader development data and holdout concentration/drawdown first."
+}

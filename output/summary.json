@@ -1,0 +1,285 @@
+{
+  "study_date": "2026-09-05",
+  "timezone": "America/Chicago",
+  "capital": 10000,
+  "requested_three_venue_estimate": null,
+  "missing_required_inputs": [
+    "historical Pinnacle paired odds and capacity",
+    "comparable historical liquidity across all three venues",
+    "historical all-universe competing quotes (private)"
+  ],
+  "catalog_complete": true,
+  "catalog": {
+    "hours": 24,
+    "combo_trades": 1472589,
+    "unique_requested_markets": 861668,
+    "metadata_markets": 861668,
+    "missing_tickers": [],
+    "cfb_two_leg_markets": 32674
+  },
+  "totals": {
+    "all_combo_trades": 1472589,
+    "all_combo_contracts": 1328194734.7002664,
+    "all_combo_taker_premium": 97179531.11457762,
+    "cfb_two_leg_trades": 80234,
+    "cfb_two_leg_premium": 17263421.222570002
+  },
+  "exclusions": {
+    "same_game_joint_model_missing": 21045,
+    "": 44971,
+    "stale_candle": 7319,
+    "no_taker_not_short_yes": 6899
+  },
+  "eligible_priced_prints": 44971,
+  "phase_counts": {
+    "pregame": 16929,
+    "unknown": 140,
+    "in_play": 27902
+  },
+  "capital_upper_bound_scenarios": {
+    "mid": {
+      "allocations": 365,
+      "expected_edge": 1477.2624830000013,
+      "terminal_net_pnl": -7484.579999999997,
+      "maximum_locked_loss": 10000.0,
+      "maximum_single_fixture_loss": 3686.7108999999996,
+      "fixture_at_maximum": "26SEP05CLEMLSU",
+      "rejects": {
+        "below_0.3c_net_edge_floor": 7267,
+        "repeat_market_second": 2,
+        "capital": 14188,
+        "missing_terminal_accounting": 6
+      },
+      "phase_attribution": {
+        "pregame": {
+          "allocations": 89,
+          "expected_edge": 586.6065952500011,
+          "terminal_net_pnl": -7501.6269
+        },
+        "unknown": {
+          "allocations": 2,
+          "expected_edge": 2.1783810000000012,
+          "terminal_net_pnl": -13.439699999999998
+        },
+        "in_play": {
+          "allocations": 274,
+          "expected_edge": 888.4775067500003,
+          "terminal_net_pnl": 30.486600000000102
+        }
+      }
+    },
+    "upper": {
+      "allocations": 196,
+      "expected_edge": 1685.1688507092595,
+      "terminal_net_pnl": -9592.889999999998,
+      "maximum_locked_loss": 10000.0,
+      "maximum_single_fixture_loss": 5894.64,
+      "fixture_at_maximum": "26SEP05LCALST",
+      "rejects": {
+        "below_0.3c_net_edge_floor": 1227,
+        "repeat_market_second": 2,
+        "capital": 3498,
+        "missing_terminal_accounting": 4
+      },
+      "phase_attribution": {
+        "pregame": {
+          "allocations": 19,
+          "expected_edge": 1254.047245751745,
+          "terminal_net_pnl": -9295.6779
+        },
+        "in_play": {
+          "allocations": 175,
+          "expected_edge": 430.95396625284116,
+          "terminal_net_pnl": -299.8162
+        },
+        "unknown": {
+          "allocations": 2,
+          "expected_edge": 0.16763870467328013,
+          "terminal_net_pnl": 2.6041
+        }
+      }
+    },
+    "rho002": {
+      "allocations": 132,
+      "expected_edge": 1514.5305864952586,
+      "terminal_net_pnl": -9931.12,
+      "maximum_locked_loss": 10202.9359,
+      "maximum_single_fixture_loss": 5685.009300000001,
+      "fixture_at_maximum": "26SEP05ECSUNCCU",
+      "rejects": {
+        "below_0.3c_net_edge_floor": 770,
+        "repeat_market_second": 2,
+        "capital": 2991,
+        "missing_terminal_accounting": 3
+      },
+      "phase_attribution": {
+        "pregame": {
+          "allocations": 15,
+          "expected_edge": 1239.193238306237,
+          "terminal_net_pnl": -9348.677700000002
+        },
+        "in_play": {
+          "allocations": 117,
+          "expected_edge": 275.3373481890223,
+          "terminal_net_pnl": -582.4422999999997
+        }
+      }
+    },
+    "rho005": {
+      "allocations": 139,
+      "expected_edge": 1486.518035000933,
+      "terminal_net_pnl": -9810.690000000006,
+      "maximum_locked_loss": 10187.6969,
+      "maximum_single_fixture_loss": 5685.009300000001,
+      "fixture_at_maximum": "26SEP05ECSUNCCU",
+      "rejects": {
+        "below_0.3c_net_edge_floor": 478,
+        "repeat_market_second": 1,
+        "capital": 2322
+      },
+      "phase_attribution": {
+        "pregame": {
+          "allocations": 13,
+          "expected_edge": 1200.1377078774362,
+          "terminal_net_pnl": -9444.6668
+        },
+        "in_play": {
+          "allocations": 126,
+          "expected_edge": 286.38032712349707,
+          "terminal_net_pnl": -366.02320000000003
+        }
+      }
+    },
+    "upper_small_prints": {
+      "allocations": 901,
+      "expected_edge": 1204.6494098837663,
+      "terminal_net_pnl": -995.5222999999986,
+      "maximum_locked_loss": 10562.848899999999,
+      "maximum_single_fixture_loss": 7317.9675000000025,
+      "fixture_at_maximum": "26SEP05BSUORE",
+      "rejects": {
+        "below_0.3c_net_edge_floor": 382,
+        "capital": 270,
+        "missing_terminal_accounting": 33
+      },
+      "phase_attribution": {
+        "pregame": {
+          "allocations": 10,
+          "expected_edge": 16.995051898349477,
+          "terminal_net_pnl": -1560.2259999999999
+        },
+        "in_play": {
+          "allocations": 887,
+          "expected_edge": 1183.3696719085187,
+          "terminal_net_pnl": 560.4564000000013
+        },
+        "unknown": {
+          "allocations": 4,
+          "expected_edge": 4.2846860768978745,
+          "terminal_net_pnl": 4.247299999999996
+        }
+      }
+    }
+  },
+  "rfq_sample": {
+    "sample_requests": 535238,
+    "requests_without_creator_id": 535238,
+    "cfb_requests": 467041,
+    "quotable_requests": 371827,
+    "quotable_5_to_20_target": 214893,
+    "context_requests_with_20_or_more_legs": 17618
+  },
+  "creator_count": 0,
+  "creator_review_count": 0,
+  "creator_blacklist_count": 0,
+  "rfq_conflicting_retrievals": 0,
+  "model": "Kalshi-only fee-expanded marginal independence proxy; full requested blend not estimable",
+  "assumptions": {
+    "leg_taker_rate": 0.07,
+    "combo_maker_rate": 0.035,
+    "publication_latency_seconds": 60,
+    "maximum_additional_age_seconds": 120,
+    "reference_minimum_net_markup": 0.003,
+    "customer_budget_includes_taker_fee": true,
+    "quantity_step": 0.01,
+    "no_combo_probability_band": true,
+    "pinnacle_available": false,
+    "liquidity_weighting_available": false,
+    "capital_capture": "completed-print capacity upper bound; not observed fills",
+    "customer_ticket_cap_dollars": null,
+    "allocation_sizing": "observed quantity clipped to available cash for principal plus maker fee"
+  },
+  "catalog_request_complete": true,
+  "creator_identity_status": "unavailable_creator_identity",
+  "observed_size_mid": {
+    "positive_prints": 21828,
+    "positive_edge_dollars": 145621.854816,
+    "signed_edge_all_priced_prints": 46388.59327350001
+  },
+  "observed_size_upper": {
+    "positive_prints": 4926,
+    "positive_edge_dollars": 40518.417678912054,
+    "signed_edge_all_priced_prints": -318675.08195214986
+  },
+  "observed_size_rho002": {
+    "positive_prints": 3897,
+    "positive_edge_dollars": 35730.52392885161,
+    "signed_edge_all_priced_prints": -369228.650899098
+  },
+  "observed_size_rho005": {
+    "positive_prints": 2939,
+    "positive_edge_dollars": 30424.525648331975,
+    "signed_edge_all_priced_prints": -444939.7412932667
+  },
+  "polymarket_diagnostic_coverage": 33028,
+  "observed_5_to_20_dollar_prints": {
+    "priced_prints": 15193,
+    "positive_upper_edge_prints": 1586,
+    "positive_upper_edge_at_observed_size": 2312.598012596761,
+    "signed_upper_edge_at_observed_size": -41655.13291781102
+  },
+  "three_venue_priced_prints": 0,
+  "unique_combo_calibration": {
+    "in_play": {
+      "markets": 11639,
+      "expected_yes_midpoint": 3470.4985500000003,
+      "expected_yes_upper": 4114.517057947801,
+      "observed_binary_yes": 3843,
+      "nonbinary_or_missing": 133
+    },
+    "pregame": {
+      "markets": 8381,
+      "expected_yes_midpoint": 2598.291775,
+      "expected_yes_upper": 2808.670238884746,
+      "observed_binary_yes": 2927,
+      "nonbinary_or_missing": 11
+    },
+    "unknown": {
+      "markets": 81,
+      "expected_yes_midpoint": 15.2517,
+      "expected_yes_upper": 17.030309088994997,
+      "observed_binary_yes": 18,
+      "nonbinary_or_missing": 0
+    }
+  },
+  "quote_floor_competitiveness": {
+    "competitive_0.000": 4865,
+    "competitive_0.001": 4125,
+    "competitive_0.003": 3689,
+    "competitive_0.005": 3364
+  },
+  "latency_sensitivity": {
+    "0": {
+      "priced": 43176,
+      "positive_edge": 23649.237099307727
+    },
+    "30": {
+      "priced": 44054,
+      "positive_edge": 33789.465183297434
+    },
+    "120": {
+      "priced": 43106,
+      "positive_edge": 49440.17231520237
+    }
+  }
+}

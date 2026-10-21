@@ -1,0 +1,1292 @@
+{
+  "fixed_policy": {
+    "ticket_cap": 250,
+    "contract_cap": 500,
+    "combo_cap": 500,
+    "fixture_cap": 1000,
+    "offset_moneyline": true,
+    "capital": 10000
+  },
+  "models": [
+    "kalshi",
+    "exchange_blend_equal"
+  ],
+  "hurdles": [
+    0.0,
+    0.0015,
+    0.003,
+    0.005,
+    0.01
+  ],
+  "input_hashes": {
+    "kalshi:0": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": "bf4625150e9889e3c2ae7b095c288506ab3e1e12e8cd8ee263a7fcd4f5e7a738",
+      "runs/nfl_moneyline_replay_20260907/jan5_18/pricing_context.jsonl.gz": "0bc5d19e473796d2dba195d3231d7d34b9f3c5d4cfe8f764c6afae8ca1bc21e7",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": "50bb46e390bcbc75c76cab6afb8f83ab011902a5d35cb9b6e20900837dcd80a2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/pricing_context.jsonl.gz": "ea9167ba1c643744da6c527450085ac6ae260d3b96d91dd578c4872f71bed7af",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": "436f95d6e6c92aea5b42418b89f92653258fc3b5230eeae7a421bc348b28964d",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/pricing_context.jsonl.gz": "10d94d44ee91b91dc94bd28998d0e50dd03ca59e6c571202c62b92817d2559b9",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": "93f90f38ad30658425d46f7d2cc77fce63c298f5c108a8b273c5e8de1ee2984c",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/pricing_context.jsonl.gz": "3e0196c3c19ea63f813983480bca12db2264f4f589169bfa8e4ce0c19d41ccba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": "80eceabc9ab63392c552cff8809cb001502e92eba1593ee5043c4c7e1510f767",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/pricing_context.jsonl.gz": "ba369b13def3fc45d58a6872d573f91dd1e9b76d21908237c9f20dd0c280afe2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": "2b82f0090c89a33231342a8cb6f096aa0a7c2664d7578743a1cb8ecb65dddb68",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/pricing_context.jsonl.gz": "93e603c49f9972c06fbbc50db44b0eba4dc919f274576e4bd8d4e17b61d51772",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": "ed6020b26ef0663d3c3a9dc6212b3aaada5d5aeba4d6b2e20771a8aa38734394",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/pricing_context.jsonl.gz": "f8e37150d7561cc84e8c9e92ebb12f14ff7ef322d570e8cbde938e4b9f0993e0",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": "e85256c3af722b67513c6195ba96f18e49cfdf360de66d31cc6f2ab8fadee3c6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/pricing_context.jsonl.gz": "e8c0908f3ac634845f6a64951f2a0a38e3a647b7344324db69e861f08ae8826f",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": "a359ce85e5fbd070d81cd8ee2f3ebf799639c48cee4f583423c6766d7092b84b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/pricing_context.jsonl.gz": "fb47135572f659224d7652f84818b47c238fae3a157f8a12214c7fb6be9cbb28",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": "6123f91f32ae52d5817836a1c034a027b5e6ace2e5d94c57d2d639deccc525ba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/pricing_context.jsonl.gz": "8310443b56ec7874c9a50d10a95e09a32fa5f39874e53601ec1e6140a91e2a37",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": "4c52e6165028050ed5a894c3095cfff623343b39d2598d38044b1936eb01358b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/pricing_context.jsonl.gz": "839f18bf554e9731bf73d2badf06fe0f9e6a9049751b4044d05ecc7323ad5097",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": "8719b0c3457545adbda69bed6b6f25d43071a6a2c1425f8a97963e04201cf6e6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/pricing_context.jsonl.gz": "c2843de3ce10c84a24f11d9433372f1ceed94bb927df668937853dc6b02a3e6c"
+    },
+    "kalshi:0.0015": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": "bf4625150e9889e3c2ae7b095c288506ab3e1e12e8cd8ee263a7fcd4f5e7a738",
+      "runs/nfl_moneyline_replay_20260907/jan5_18/pricing_context.jsonl.gz": "0bc5d19e473796d2dba195d3231d7d34b9f3c5d4cfe8f764c6afae8ca1bc21e7",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": "50bb46e390bcbc75c76cab6afb8f83ab011902a5d35cb9b6e20900837dcd80a2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/pricing_context.jsonl.gz": "ea9167ba1c643744da6c527450085ac6ae260d3b96d91dd578c4872f71bed7af",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": "436f95d6e6c92aea5b42418b89f92653258fc3b5230eeae7a421bc348b28964d",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/pricing_context.jsonl.gz": "10d94d44ee91b91dc94bd28998d0e50dd03ca59e6c571202c62b92817d2559b9",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": "93f90f38ad30658425d46f7d2cc77fce63c298f5c108a8b273c5e8de1ee2984c",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/pricing_context.jsonl.gz": "3e0196c3c19ea63f813983480bca12db2264f4f589169bfa8e4ce0c19d41ccba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": "80eceabc9ab63392c552cff8809cb001502e92eba1593ee5043c4c7e1510f767",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/pricing_context.jsonl.gz": "ba369b13def3fc45d58a6872d573f91dd1e9b76d21908237c9f20dd0c280afe2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": "2b82f0090c89a33231342a8cb6f096aa0a7c2664d7578743a1cb8ecb65dddb68",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/pricing_context.jsonl.gz": "93e603c49f9972c06fbbc50db44b0eba4dc919f274576e4bd8d4e17b61d51772",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": "ed6020b26ef0663d3c3a9dc6212b3aaada5d5aeba4d6b2e20771a8aa38734394",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/pricing_context.jsonl.gz": "f8e37150d7561cc84e8c9e92ebb12f14ff7ef322d570e8cbde938e4b9f0993e0",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": "e85256c3af722b67513c6195ba96f18e49cfdf360de66d31cc6f2ab8fadee3c6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/pricing_context.jsonl.gz": "e8c0908f3ac634845f6a64951f2a0a38e3a647b7344324db69e861f08ae8826f",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": "a359ce85e5fbd070d81cd8ee2f3ebf799639c48cee4f583423c6766d7092b84b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/pricing_context.jsonl.gz": "fb47135572f659224d7652f84818b47c238fae3a157f8a12214c7fb6be9cbb28",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": "6123f91f32ae52d5817836a1c034a027b5e6ace2e5d94c57d2d639deccc525ba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/pricing_context.jsonl.gz": "8310443b56ec7874c9a50d10a95e09a32fa5f39874e53601ec1e6140a91e2a37",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": "4c52e6165028050ed5a894c3095cfff623343b39d2598d38044b1936eb01358b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/pricing_context.jsonl.gz": "839f18bf554e9731bf73d2badf06fe0f9e6a9049751b4044d05ecc7323ad5097",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": "8719b0c3457545adbda69bed6b6f25d43071a6a2c1425f8a97963e04201cf6e6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/pricing_context.jsonl.gz": "c2843de3ce10c84a24f11d9433372f1ceed94bb927df668937853dc6b02a3e6c"
+    },
+    "kalshi:0.003": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": "bf4625150e9889e3c2ae7b095c288506ab3e1e12e8cd8ee263a7fcd4f5e7a738",
+      "runs/nfl_moneyline_replay_20260907/jan5_18/pricing_context.jsonl.gz": "0bc5d19e473796d2dba195d3231d7d34b9f3c5d4cfe8f764c6afae8ca1bc21e7",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": "50bb46e390bcbc75c76cab6afb8f83ab011902a5d35cb9b6e20900837dcd80a2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/pricing_context.jsonl.gz": "ea9167ba1c643744da6c527450085ac6ae260d3b96d91dd578c4872f71bed7af",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": "436f95d6e6c92aea5b42418b89f92653258fc3b5230eeae7a421bc348b28964d",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/pricing_context.jsonl.gz": "10d94d44ee91b91dc94bd28998d0e50dd03ca59e6c571202c62b92817d2559b9",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": "93f90f38ad30658425d46f7d2cc77fce63c298f5c108a8b273c5e8de1ee2984c",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/pricing_context.jsonl.gz": "3e0196c3c19ea63f813983480bca12db2264f4f589169bfa8e4ce0c19d41ccba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": "80eceabc9ab63392c552cff8809cb001502e92eba1593ee5043c4c7e1510f767",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/pricing_context.jsonl.gz": "ba369b13def3fc45d58a6872d573f91dd1e9b76d21908237c9f20dd0c280afe2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": "2b82f0090c89a33231342a8cb6f096aa0a7c2664d7578743a1cb8ecb65dddb68",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/pricing_context.jsonl.gz": "93e603c49f9972c06fbbc50db44b0eba4dc919f274576e4bd8d4e17b61d51772",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": "ed6020b26ef0663d3c3a9dc6212b3aaada5d5aeba4d6b2e20771a8aa38734394",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/pricing_context.jsonl.gz": "f8e37150d7561cc84e8c9e92ebb12f14ff7ef322d570e8cbde938e4b9f0993e0",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": "e85256c3af722b67513c6195ba96f18e49cfdf360de66d31cc6f2ab8fadee3c6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/pricing_context.jsonl.gz": "e8c0908f3ac634845f6a64951f2a0a38e3a647b7344324db69e861f08ae8826f",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": "a359ce85e5fbd070d81cd8ee2f3ebf799639c48cee4f583423c6766d7092b84b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/pricing_context.jsonl.gz": "fb47135572f659224d7652f84818b47c238fae3a157f8a12214c7fb6be9cbb28",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": "6123f91f32ae52d5817836a1c034a027b5e6ace2e5d94c57d2d639deccc525ba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/pricing_context.jsonl.gz": "8310443b56ec7874c9a50d10a95e09a32fa5f39874e53601ec1e6140a91e2a37",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": "4c52e6165028050ed5a894c3095cfff623343b39d2598d38044b1936eb01358b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/pricing_context.jsonl.gz": "839f18bf554e9731bf73d2badf06fe0f9e6a9049751b4044d05ecc7323ad5097",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": "8719b0c3457545adbda69bed6b6f25d43071a6a2c1425f8a97963e04201cf6e6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/pricing_context.jsonl.gz": "c2843de3ce10c84a24f11d9433372f1ceed94bb927df668937853dc6b02a3e6c"
+    },
+    "kalshi:0.005": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": "bf4625150e9889e3c2ae7b095c288506ab3e1e12e8cd8ee263a7fcd4f5e7a738",
+      "runs/nfl_moneyline_replay_20260907/jan5_18/pricing_context.jsonl.gz": "0bc5d19e473796d2dba195d3231d7d34b9f3c5d4cfe8f764c6afae8ca1bc21e7",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": "50bb46e390bcbc75c76cab6afb8f83ab011902a5d35cb9b6e20900837dcd80a2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/pricing_context.jsonl.gz": "ea9167ba1c643744da6c527450085ac6ae260d3b96d91dd578c4872f71bed7af",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": "436f95d6e6c92aea5b42418b89f92653258fc3b5230eeae7a421bc348b28964d",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/pricing_context.jsonl.gz": "10d94d44ee91b91dc94bd28998d0e50dd03ca59e6c571202c62b92817d2559b9",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": "93f90f38ad30658425d46f7d2cc77fce63c298f5c108a8b273c5e8de1ee2984c",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/pricing_context.jsonl.gz": "3e0196c3c19ea63f813983480bca12db2264f4f589169bfa8e4ce0c19d41ccba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": "80eceabc9ab63392c552cff8809cb001502e92eba1593ee5043c4c7e1510f767",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/pricing_context.jsonl.gz": "ba369b13def3fc45d58a6872d573f91dd1e9b76d21908237c9f20dd0c280afe2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": "2b82f0090c89a33231342a8cb6f096aa0a7c2664d7578743a1cb8ecb65dddb68",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/pricing_context.jsonl.gz": "93e603c49f9972c06fbbc50db44b0eba4dc919f274576e4bd8d4e17b61d51772",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": "ed6020b26ef0663d3c3a9dc6212b3aaada5d5aeba4d6b2e20771a8aa38734394",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/pricing_context.jsonl.gz": "f8e37150d7561cc84e8c9e92ebb12f14ff7ef322d570e8cbde938e4b9f0993e0",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": "e85256c3af722b67513c6195ba96f18e49cfdf360de66d31cc6f2ab8fadee3c6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/pricing_context.jsonl.gz": "e8c0908f3ac634845f6a64951f2a0a38e3a647b7344324db69e861f08ae8826f",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": "a359ce85e5fbd070d81cd8ee2f3ebf799639c48cee4f583423c6766d7092b84b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/pricing_context.jsonl.gz": "fb47135572f659224d7652f84818b47c238fae3a157f8a12214c7fb6be9cbb28",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": "6123f91f32ae52d5817836a1c034a027b5e6ace2e5d94c57d2d639deccc525ba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/pricing_context.jsonl.gz": "8310443b56ec7874c9a50d10a95e09a32fa5f39874e53601ec1e6140a91e2a37",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": "4c52e6165028050ed5a894c3095cfff623343b39d2598d38044b1936eb01358b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/pricing_context.jsonl.gz": "839f18bf554e9731bf73d2badf06fe0f9e6a9049751b4044d05ecc7323ad5097",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": "8719b0c3457545adbda69bed6b6f25d43071a6a2c1425f8a97963e04201cf6e6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/pricing_context.jsonl.gz": "c2843de3ce10c84a24f11d9433372f1ceed94bb927df668937853dc6b02a3e6c"
+    },
+    "kalshi:0.01": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": "bf4625150e9889e3c2ae7b095c288506ab3e1e12e8cd8ee263a7fcd4f5e7a738",
+      "runs/nfl_moneyline_replay_20260907/jan5_18/pricing_context.jsonl.gz": "0bc5d19e473796d2dba195d3231d7d34b9f3c5d4cfe8f764c6afae8ca1bc21e7",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": "50bb46e390bcbc75c76cab6afb8f83ab011902a5d35cb9b6e20900837dcd80a2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/pricing_context.jsonl.gz": "ea9167ba1c643744da6c527450085ac6ae260d3b96d91dd578c4872f71bed7af",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": "436f95d6e6c92aea5b42418b89f92653258fc3b5230eeae7a421bc348b28964d",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/pricing_context.jsonl.gz": "10d94d44ee91b91dc94bd28998d0e50dd03ca59e6c571202c62b92817d2559b9",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": "93f90f38ad30658425d46f7d2cc77fce63c298f5c108a8b273c5e8de1ee2984c",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/pricing_context.jsonl.gz": "3e0196c3c19ea63f813983480bca12db2264f4f589169bfa8e4ce0c19d41ccba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": "80eceabc9ab63392c552cff8809cb001502e92eba1593ee5043c4c7e1510f767",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/pricing_context.jsonl.gz": "ba369b13def3fc45d58a6872d573f91dd1e9b76d21908237c9f20dd0c280afe2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": "2b82f0090c89a33231342a8cb6f096aa0a7c2664d7578743a1cb8ecb65dddb68",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/pricing_context.jsonl.gz": "93e603c49f9972c06fbbc50db44b0eba4dc919f274576e4bd8d4e17b61d51772",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": "ed6020b26ef0663d3c3a9dc6212b3aaada5d5aeba4d6b2e20771a8aa38734394",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/pricing_context.jsonl.gz": "f8e37150d7561cc84e8c9e92ebb12f14ff7ef322d570e8cbde938e4b9f0993e0",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": "e85256c3af722b67513c6195ba96f18e49cfdf360de66d31cc6f2ab8fadee3c6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/pricing_context.jsonl.gz": "e8c0908f3ac634845f6a64951f2a0a38e3a647b7344324db69e861f08ae8826f",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": "a359ce85e5fbd070d81cd8ee2f3ebf799639c48cee4f583423c6766d7092b84b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/pricing_context.jsonl.gz": "fb47135572f659224d7652f84818b47c238fae3a157f8a12214c7fb6be9cbb28",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": "6123f91f32ae52d5817836a1c034a027b5e6ace2e5d94c57d2d639deccc525ba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/pricing_context.jsonl.gz": "8310443b56ec7874c9a50d10a95e09a32fa5f39874e53601ec1e6140a91e2a37",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": "4c52e6165028050ed5a894c3095cfff623343b39d2598d38044b1936eb01358b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/pricing_context.jsonl.gz": "839f18bf554e9731bf73d2badf06fe0f9e6a9049751b4044d05ecc7323ad5097",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": "8719b0c3457545adbda69bed6b6f25d43071a6a2c1425f8a97963e04201cf6e6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/pricing_context.jsonl.gz": "c2843de3ce10c84a24f11d9433372f1ceed94bb927df668937853dc6b02a3e6c"
+    },
+    "exchange_blend_equal:0": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": "bf4625150e9889e3c2ae7b095c288506ab3e1e12e8cd8ee263a7fcd4f5e7a738",
+      "runs/nfl_moneyline_replay_20260907/jan5_18/pricing_context.jsonl.gz": "0bc5d19e473796d2dba195d3231d7d34b9f3c5d4cfe8f764c6afae8ca1bc21e7",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": "50bb46e390bcbc75c76cab6afb8f83ab011902a5d35cb9b6e20900837dcd80a2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/pricing_context.jsonl.gz": "ea9167ba1c643744da6c527450085ac6ae260d3b96d91dd578c4872f71bed7af",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": "436f95d6e6c92aea5b42418b89f92653258fc3b5230eeae7a421bc348b28964d",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/pricing_context.jsonl.gz": "10d94d44ee91b91dc94bd28998d0e50dd03ca59e6c571202c62b92817d2559b9",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": "93f90f38ad30658425d46f7d2cc77fce63c298f5c108a8b273c5e8de1ee2984c",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/pricing_context.jsonl.gz": "3e0196c3c19ea63f813983480bca12db2264f4f589169bfa8e4ce0c19d41ccba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": "80eceabc9ab63392c552cff8809cb001502e92eba1593ee5043c4c7e1510f767",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/pricing_context.jsonl.gz": "ba369b13def3fc45d58a6872d573f91dd1e9b76d21908237c9f20dd0c280afe2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": "2b82f0090c89a33231342a8cb6f096aa0a7c2664d7578743a1cb8ecb65dddb68",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/pricing_context.jsonl.gz": "93e603c49f9972c06fbbc50db44b0eba4dc919f274576e4bd8d4e17b61d51772",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": "ed6020b26ef0663d3c3a9dc6212b3aaada5d5aeba4d6b2e20771a8aa38734394",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/pricing_context.jsonl.gz": "f8e37150d7561cc84e8c9e92ebb12f14ff7ef322d570e8cbde938e4b9f0993e0",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": "e85256c3af722b67513c6195ba96f18e49cfdf360de66d31cc6f2ab8fadee3c6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/pricing_context.jsonl.gz": "e8c0908f3ac634845f6a64951f2a0a38e3a647b7344324db69e861f08ae8826f",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": "a359ce85e5fbd070d81cd8ee2f3ebf799639c48cee4f583423c6766d7092b84b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/pricing_context.jsonl.gz": "fb47135572f659224d7652f84818b47c238fae3a157f8a12214c7fb6be9cbb28",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": "6123f91f32ae52d5817836a1c034a027b5e6ace2e5d94c57d2d639deccc525ba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/pricing_context.jsonl.gz": "8310443b56ec7874c9a50d10a95e09a32fa5f39874e53601ec1e6140a91e2a37",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": "4c52e6165028050ed5a894c3095cfff623343b39d2598d38044b1936eb01358b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/pricing_context.jsonl.gz": "839f18bf554e9731bf73d2badf06fe0f9e6a9049751b4044d05ecc7323ad5097",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": "8719b0c3457545adbda69bed6b6f25d43071a6a2c1425f8a97963e04201cf6e6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/pricing_context.jsonl.gz": "c2843de3ce10c84a24f11d9433372f1ceed94bb927df668937853dc6b02a3e6c"
+    },
+    "exchange_blend_equal:0.0015": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": "bf4625150e9889e3c2ae7b095c288506ab3e1e12e8cd8ee263a7fcd4f5e7a738",
+      "runs/nfl_moneyline_replay_20260907/jan5_18/pricing_context.jsonl.gz": "0bc5d19e473796d2dba195d3231d7d34b9f3c5d4cfe8f764c6afae8ca1bc21e7",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": "50bb46e390bcbc75c76cab6afb8f83ab011902a5d35cb9b6e20900837dcd80a2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/pricing_context.jsonl.gz": "ea9167ba1c643744da6c527450085ac6ae260d3b96d91dd578c4872f71bed7af",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": "436f95d6e6c92aea5b42418b89f92653258fc3b5230eeae7a421bc348b28964d",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/pricing_context.jsonl.gz": "10d94d44ee91b91dc94bd28998d0e50dd03ca59e6c571202c62b92817d2559b9",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": "93f90f38ad30658425d46f7d2cc77fce63c298f5c108a8b273c5e8de1ee2984c",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/pricing_context.jsonl.gz": "3e0196c3c19ea63f813983480bca12db2264f4f589169bfa8e4ce0c19d41ccba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": "80eceabc9ab63392c552cff8809cb001502e92eba1593ee5043c4c7e1510f767",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/pricing_context.jsonl.gz": "ba369b13def3fc45d58a6872d573f91dd1e9b76d21908237c9f20dd0c280afe2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": "2b82f0090c89a33231342a8cb6f096aa0a7c2664d7578743a1cb8ecb65dddb68",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/pricing_context.jsonl.gz": "93e603c49f9972c06fbbc50db44b0eba4dc919f274576e4bd8d4e17b61d51772",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": "ed6020b26ef0663d3c3a9dc6212b3aaada5d5aeba4d6b2e20771a8aa38734394",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/pricing_context.jsonl.gz": "f8e37150d7561cc84e8c9e92ebb12f14ff7ef322d570e8cbde938e4b9f0993e0",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": "e85256c3af722b67513c6195ba96f18e49cfdf360de66d31cc6f2ab8fadee3c6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/pricing_context.jsonl.gz": "e8c0908f3ac634845f6a64951f2a0a38e3a647b7344324db69e861f08ae8826f",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": "a359ce85e5fbd070d81cd8ee2f3ebf799639c48cee4f583423c6766d7092b84b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/pricing_context.jsonl.gz": "fb47135572f659224d7652f84818b47c238fae3a157f8a12214c7fb6be9cbb28",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": "6123f91f32ae52d5817836a1c034a027b5e6ace2e5d94c57d2d639deccc525ba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/pricing_context.jsonl.gz": "8310443b56ec7874c9a50d10a95e09a32fa5f39874e53601ec1e6140a91e2a37",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": "4c52e6165028050ed5a894c3095cfff623343b39d2598d38044b1936eb01358b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/pricing_context.jsonl.gz": "839f18bf554e9731bf73d2badf06fe0f9e6a9049751b4044d05ecc7323ad5097",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": "8719b0c3457545adbda69bed6b6f25d43071a6a2c1425f8a97963e04201cf6e6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/pricing_context.jsonl.gz": "c2843de3ce10c84a24f11d9433372f1ceed94bb927df668937853dc6b02a3e6c"
+    },
+    "exchange_blend_equal:0.003": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": "bf4625150e9889e3c2ae7b095c288506ab3e1e12e8cd8ee263a7fcd4f5e7a738",
+      "runs/nfl_moneyline_replay_20260907/jan5_18/pricing_context.jsonl.gz": "0bc5d19e473796d2dba195d3231d7d34b9f3c5d4cfe8f764c6afae8ca1bc21e7",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": "50bb46e390bcbc75c76cab6afb8f83ab011902a5d35cb9b6e20900837dcd80a2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/pricing_context.jsonl.gz": "ea9167ba1c643744da6c527450085ac6ae260d3b96d91dd578c4872f71bed7af",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": "436f95d6e6c92aea5b42418b89f92653258fc3b5230eeae7a421bc348b28964d",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/pricing_context.jsonl.gz": "10d94d44ee91b91dc94bd28998d0e50dd03ca59e6c571202c62b92817d2559b9",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": "93f90f38ad30658425d46f7d2cc77fce63c298f5c108a8b273c5e8de1ee2984c",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/pricing_context.jsonl.gz": "3e0196c3c19ea63f813983480bca12db2264f4f589169bfa8e4ce0c19d41ccba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": "80eceabc9ab63392c552cff8809cb001502e92eba1593ee5043c4c7e1510f767",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/pricing_context.jsonl.gz": "ba369b13def3fc45d58a6872d573f91dd1e9b76d21908237c9f20dd0c280afe2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": "2b82f0090c89a33231342a8cb6f096aa0a7c2664d7578743a1cb8ecb65dddb68",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/pricing_context.jsonl.gz": "93e603c49f9972c06fbbc50db44b0eba4dc919f274576e4bd8d4e17b61d51772",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": "ed6020b26ef0663d3c3a9dc6212b3aaada5d5aeba4d6b2e20771a8aa38734394",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/pricing_context.jsonl.gz": "f8e37150d7561cc84e8c9e92ebb12f14ff7ef322d570e8cbde938e4b9f0993e0",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": "e85256c3af722b67513c6195ba96f18e49cfdf360de66d31cc6f2ab8fadee3c6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/pricing_context.jsonl.gz": "e8c0908f3ac634845f6a64951f2a0a38e3a647b7344324db69e861f08ae8826f",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": "a359ce85e5fbd070d81cd8ee2f3ebf799639c48cee4f583423c6766d7092b84b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/pricing_context.jsonl.gz": "fb47135572f659224d7652f84818b47c238fae3a157f8a12214c7fb6be9cbb28",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": "6123f91f32ae52d5817836a1c034a027b5e6ace2e5d94c57d2d639deccc525ba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/pricing_context.jsonl.gz": "8310443b56ec7874c9a50d10a95e09a32fa5f39874e53601ec1e6140a91e2a37",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": "4c52e6165028050ed5a894c3095cfff623343b39d2598d38044b1936eb01358b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/pricing_context.jsonl.gz": "839f18bf554e9731bf73d2badf06fe0f9e6a9049751b4044d05ecc7323ad5097",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": "8719b0c3457545adbda69bed6b6f25d43071a6a2c1425f8a97963e04201cf6e6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/pricing_context.jsonl.gz": "c2843de3ce10c84a24f11d9433372f1ceed94bb927df668937853dc6b02a3e6c"
+    },
+    "exchange_blend_equal:0.005": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": "bf4625150e9889e3c2ae7b095c288506ab3e1e12e8cd8ee263a7fcd4f5e7a738",
+      "runs/nfl_moneyline_replay_20260907/jan5_18/pricing_context.jsonl.gz": "0bc5d19e473796d2dba195d3231d7d34b9f3c5d4cfe8f764c6afae8ca1bc21e7",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": "50bb46e390bcbc75c76cab6afb8f83ab011902a5d35cb9b6e20900837dcd80a2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/pricing_context.jsonl.gz": "ea9167ba1c643744da6c527450085ac6ae260d3b96d91dd578c4872f71bed7af",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": "436f95d6e6c92aea5b42418b89f92653258fc3b5230eeae7a421bc348b28964d",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/pricing_context.jsonl.gz": "10d94d44ee91b91dc94bd28998d0e50dd03ca59e6c571202c62b92817d2559b9",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": "93f90f38ad30658425d46f7d2cc77fce63c298f5c108a8b273c5e8de1ee2984c",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/pricing_context.jsonl.gz": "3e0196c3c19ea63f813983480bca12db2264f4f589169bfa8e4ce0c19d41ccba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": "80eceabc9ab63392c552cff8809cb001502e92eba1593ee5043c4c7e1510f767",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/pricing_context.jsonl.gz": "ba369b13def3fc45d58a6872d573f91dd1e9b76d21908237c9f20dd0c280afe2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": "2b82f0090c89a33231342a8cb6f096aa0a7c2664d7578743a1cb8ecb65dddb68",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/pricing_context.jsonl.gz": "93e603c49f9972c06fbbc50db44b0eba4dc919f274576e4bd8d4e17b61d51772",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": "ed6020b26ef0663d3c3a9dc6212b3aaada5d5aeba4d6b2e20771a8aa38734394",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/pricing_context.jsonl.gz": "f8e37150d7561cc84e8c9e92ebb12f14ff7ef322d570e8cbde938e4b9f0993e0",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": "e85256c3af722b67513c6195ba96f18e49cfdf360de66d31cc6f2ab8fadee3c6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/pricing_context.jsonl.gz": "e8c0908f3ac634845f6a64951f2a0a38e3a647b7344324db69e861f08ae8826f",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": "a359ce85e5fbd070d81cd8ee2f3ebf799639c48cee4f583423c6766d7092b84b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/pricing_context.jsonl.gz": "fb47135572f659224d7652f84818b47c238fae3a157f8a12214c7fb6be9cbb28",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": "6123f91f32ae52d5817836a1c034a027b5e6ace2e5d94c57d2d639deccc525ba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/pricing_context.jsonl.gz": "8310443b56ec7874c9a50d10a95e09a32fa5f39874e53601ec1e6140a91e2a37",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": "4c52e6165028050ed5a894c3095cfff623343b39d2598d38044b1936eb01358b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/pricing_context.jsonl.gz": "839f18bf554e9731bf73d2badf06fe0f9e6a9049751b4044d05ecc7323ad5097",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": "8719b0c3457545adbda69bed6b6f25d43071a6a2c1425f8a97963e04201cf6e6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/pricing_context.jsonl.gz": "c2843de3ce10c84a24f11d9433372f1ceed94bb927df668937853dc6b02a3e6c"
+    },
+    "exchange_blend_equal:0.01": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": "bf4625150e9889e3c2ae7b095c288506ab3e1e12e8cd8ee263a7fcd4f5e7a738",
+      "runs/nfl_moneyline_replay_20260907/jan5_18/pricing_context.jsonl.gz": "0bc5d19e473796d2dba195d3231d7d34b9f3c5d4cfe8f764c6afae8ca1bc21e7",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": "50bb46e390bcbc75c76cab6afb8f83ab011902a5d35cb9b6e20900837dcd80a2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/pricing_context.jsonl.gz": "ea9167ba1c643744da6c527450085ac6ae260d3b96d91dd578c4872f71bed7af",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": "436f95d6e6c92aea5b42418b89f92653258fc3b5230eeae7a421bc348b28964d",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/pricing_context.jsonl.gz": "10d94d44ee91b91dc94bd28998d0e50dd03ca59e6c571202c62b92817d2559b9",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": "93f90f38ad30658425d46f7d2cc77fce63c298f5c108a8b273c5e8de1ee2984c",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/pricing_context.jsonl.gz": "3e0196c3c19ea63f813983480bca12db2264f4f589169bfa8e4ce0c19d41ccba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": "80eceabc9ab63392c552cff8809cb001502e92eba1593ee5043c4c7e1510f767",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/pricing_context.jsonl.gz": "ba369b13def3fc45d58a6872d573f91dd1e9b76d21908237c9f20dd0c280afe2",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": "2b82f0090c89a33231342a8cb6f096aa0a7c2664d7578743a1cb8ecb65dddb68",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/pricing_context.jsonl.gz": "93e603c49f9972c06fbbc50db44b0eba4dc919f274576e4bd8d4e17b61d51772",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": "ed6020b26ef0663d3c3a9dc6212b3aaada5d5aeba4d6b2e20771a8aa38734394",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/pricing_context.jsonl.gz": "f8e37150d7561cc84e8c9e92ebb12f14ff7ef322d570e8cbde938e4b9f0993e0",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": "e85256c3af722b67513c6195ba96f18e49cfdf360de66d31cc6f2ab8fadee3c6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/pricing_context.jsonl.gz": "e8c0908f3ac634845f6a64951f2a0a38e3a647b7344324db69e861f08ae8826f",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": "a359ce85e5fbd070d81cd8ee2f3ebf799639c48cee4f583423c6766d7092b84b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/pricing_context.jsonl.gz": "fb47135572f659224d7652f84818b47c238fae3a157f8a12214c7fb6be9cbb28",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": "6123f91f32ae52d5817836a1c034a027b5e6ace2e5d94c57d2d639deccc525ba",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/pricing_context.jsonl.gz": "8310443b56ec7874c9a50d10a95e09a32fa5f39874e53601ec1e6140a91e2a37",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": "4c52e6165028050ed5a894c3095cfff623343b39d2598d38044b1936eb01358b",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/pricing_context.jsonl.gz": "839f18bf554e9731bf73d2badf06fe0f9e6a9049751b4044d05ecc7323ad5097",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": "8719b0c3457545adbda69bed6b6f25d43071a6a2c1425f8a97963e04201cf6e6",
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/pricing_context.jsonl.gz": "c2843de3ce10c84a24f11d9433372f1ceed94bb927df668937853dc6b02a3e6c"
+    }
+  },
+  "audit": {
+    "kalshi:0": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": {
+        "model_rows": 23809,
+        "edge_rejected": 19418,
+        "candidates": 4391,
+        "offset_eligible": 4391
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": {
+        "model_rows": 35237,
+        "edge_rejected": 32600,
+        "candidates": 2637,
+        "offset_eligible": 787
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": {
+        "model_rows": 29401,
+        "edge_rejected": 26329,
+        "candidates": 3072,
+        "offset_eligible": 618
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": {
+        "model_rows": 26287,
+        "edge_rejected": 21415,
+        "candidates": 4872,
+        "offset_eligible": 1430
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": {
+        "model_rows": 29110,
+        "edge_rejected": 27209,
+        "candidates": 1901,
+        "offset_eligible": 225
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": {
+        "model_rows": 47415,
+        "edge_rejected": 42582,
+        "candidates": 4833,
+        "offset_eligible": 1060
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": {
+        "model_rows": 28122,
+        "edge_rejected": 25329,
+        "candidates": 2793,
+        "offset_eligible": 536
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": {
+        "model_rows": 1202,
+        "edge_rejected": 221,
+        "candidates": 981,
+        "offset_eligible": 419
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": {
+        "model_rows": 42952,
+        "edge_rejected": 41410,
+        "candidates": 1542,
+        "offset_eligible": 159
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": {
+        "model_rows": 24907,
+        "edge_rejected": 23275,
+        "candidates": 1632,
+        "offset_eligible": 445
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": {
+        "model_rows": 58310,
+        "edge_rejected": 56510,
+        "candidates": 1800,
+        "offset_eligible": 329
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": {
+        "model_rows": 43830,
+        "edge_rejected": 42359,
+        "candidates": 1471,
+        "offset_eligible": 149
+      }
+    },
+    "kalshi:0.0015": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": {
+        "model_rows": 23809,
+        "edge_rejected": 21687,
+        "candidates": 2122,
+        "offset_eligible": 2122
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": {
+        "model_rows": 35237,
+        "edge_rejected": 34630,
+        "candidates": 607,
+        "offset_eligible": 137
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": {
+        "model_rows": 29401,
+        "edge_rejected": 28369,
+        "candidates": 1032,
+        "offset_eligible": 154
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": {
+        "model_rows": 26287,
+        "edge_rejected": 24107,
+        "candidates": 2180,
+        "offset_eligible": 717
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": {
+        "model_rows": 29110,
+        "edge_rejected": 28672,
+        "candidates": 438,
+        "offset_eligible": 58
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": {
+        "model_rows": 47415,
+        "edge_rejected": 45866,
+        "candidates": 1549,
+        "offset_eligible": 249
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": {
+        "model_rows": 28122,
+        "edge_rejected": 27129,
+        "candidates": 993,
+        "offset_eligible": 143
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": {
+        "model_rows": 1202,
+        "edge_rejected": 320,
+        "candidates": 882,
+        "offset_eligible": 366
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": {
+        "model_rows": 42952,
+        "edge_rejected": 42322,
+        "candidates": 630,
+        "offset_eligible": 65
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": {
+        "model_rows": 24907,
+        "edge_rejected": 24429,
+        "candidates": 478,
+        "offset_eligible": 139
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": {
+        "model_rows": 58310,
+        "edge_rejected": 57900,
+        "candidates": 410,
+        "offset_eligible": 81
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": {
+        "model_rows": 43830,
+        "edge_rejected": 43252,
+        "candidates": 578,
+        "offset_eligible": 49
+      }
+    },
+    "kalshi:0.003": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": {
+        "model_rows": 23809,
+        "edge_rejected": 22502,
+        "candidates": 1307,
+        "offset_eligible": 1307
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": {
+        "model_rows": 35237,
+        "edge_rejected": 34989,
+        "candidates": 248,
+        "offset_eligible": 62
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": {
+        "model_rows": 29401,
+        "edge_rejected": 29003,
+        "candidates": 398,
+        "offset_eligible": 42
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": {
+        "model_rows": 26287,
+        "edge_rejected": 25405,
+        "candidates": 882,
+        "offset_eligible": 291
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": {
+        "model_rows": 29110,
+        "edge_rejected": 28957,
+        "candidates": 153,
+        "offset_eligible": 23
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": {
+        "model_rows": 47415,
+        "edge_rejected": 46784,
+        "candidates": 631,
+        "offset_eligible": 116
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": {
+        "model_rows": 28122,
+        "edge_rejected": 27579,
+        "candidates": 543,
+        "offset_eligible": 48
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": {
+        "model_rows": 1202,
+        "edge_rejected": 423,
+        "candidates": 779,
+        "offset_eligible": 314
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": {
+        "model_rows": 42952,
+        "edge_rejected": 42487,
+        "candidates": 465,
+        "offset_eligible": 45
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": {
+        "model_rows": 24907,
+        "edge_rejected": 24654,
+        "candidates": 253,
+        "offset_eligible": 77
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": {
+        "model_rows": 58310,
+        "edge_rejected": 58100,
+        "candidates": 210,
+        "offset_eligible": 53
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": {
+        "model_rows": 43830,
+        "edge_rejected": 43433,
+        "candidates": 397,
+        "offset_eligible": 30
+      }
+    },
+    "kalshi:0.005": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": {
+        "model_rows": 23809,
+        "edge_rejected": 22968,
+        "candidates": 841,
+        "offset_eligible": 841
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": {
+        "model_rows": 35237,
+        "edge_rejected": 35072,
+        "candidates": 165,
+        "offset_eligible": 48
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": {
+        "model_rows": 29401,
+        "edge_rejected": 29237,
+        "candidates": 164,
+        "offset_eligible": 14
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": {
+        "model_rows": 26287,
+        "edge_rejected": 25896,
+        "candidates": 391,
+        "offset_eligible": 121
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": {
+        "model_rows": 29110,
+        "edge_rejected": 29037,
+        "candidates": 73,
+        "offset_eligible": 10
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": {
+        "model_rows": 47415,
+        "edge_rejected": 47094,
+        "candidates": 321,
+        "offset_eligible": 70
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": {
+        "model_rows": 28122,
+        "edge_rejected": 27744,
+        "candidates": 378,
+        "offset_eligible": 30
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": {
+        "model_rows": 1202,
+        "edge_rejected": 564,
+        "candidates": 638,
+        "offset_eligible": 257
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": {
+        "model_rows": 42952,
+        "edge_rejected": 42541,
+        "candidates": 411,
+        "offset_eligible": 33
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": {
+        "model_rows": 24907,
+        "edge_rejected": 24720,
+        "candidates": 187,
+        "offset_eligible": 69
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": {
+        "model_rows": 58310,
+        "edge_rejected": 58172,
+        "candidates": 138,
+        "offset_eligible": 37
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": {
+        "model_rows": 43830,
+        "edge_rejected": 43511,
+        "candidates": 319,
+        "offset_eligible": 16
+      }
+    },
+    "kalshi:0.01": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": {
+        "model_rows": 23809,
+        "edge_rejected": 23531,
+        "candidates": 278,
+        "offset_eligible": 278
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": {
+        "model_rows": 35237,
+        "edge_rejected": 35162,
+        "candidates": 75,
+        "offset_eligible": 22
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": {
+        "model_rows": 29401,
+        "edge_rejected": 29326,
+        "candidates": 75,
+        "offset_eligible": 9
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": {
+        "model_rows": 26287,
+        "edge_rejected": 26147,
+        "candidates": 140,
+        "offset_eligible": 26
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": {
+        "model_rows": 29110,
+        "edge_rejected": 29084,
+        "candidates": 26,
+        "offset_eligible": 1
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": {
+        "model_rows": 47415,
+        "edge_rejected": 47238,
+        "candidates": 177,
+        "offset_eligible": 39
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": {
+        "model_rows": 28122,
+        "edge_rejected": 27883,
+        "candidates": 239,
+        "offset_eligible": 5
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": {
+        "model_rows": 1202,
+        "edge_rejected": 864,
+        "candidates": 338,
+        "offset_eligible": 113
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": {
+        "model_rows": 42952,
+        "edge_rejected": 42610,
+        "candidates": 342,
+        "offset_eligible": 23
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": {
+        "model_rows": 24907,
+        "edge_rejected": 24785,
+        "candidates": 122,
+        "offset_eligible": 56
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": {
+        "model_rows": 58310,
+        "edge_rejected": 58249,
+        "candidates": 61,
+        "offset_eligible": 11
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": {
+        "model_rows": 43830,
+        "edge_rejected": 43632,
+        "candidates": 198,
+        "offset_eligible": 2
+      }
+    },
+    "exchange_blend_equal:0": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": {
+        "model_rows": 23809,
+        "edge_rejected": 18715,
+        "candidates": 5094,
+        "offset_eligible": 5094
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": {
+        "model_rows": 31263,
+        "edge_rejected": 27054,
+        "candidates": 4209,
+        "offset_eligible": 1961
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": {
+        "model_rows": 26176,
+        "edge_rejected": 21741,
+        "candidates": 4435,
+        "offset_eligible": 1065
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": {
+        "model_rows": 22487,
+        "edge_rejected": 15463,
+        "candidates": 7024,
+        "offset_eligible": 3227
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": {
+        "model_rows": 20386,
+        "edge_rejected": 18852,
+        "candidates": 1534,
+        "offset_eligible": 349
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": {
+        "model_rows": 35643,
+        "edge_rejected": 32097,
+        "candidates": 3546,
+        "offset_eligible": 1184
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": {
+        "model_rows": 24774,
+        "edge_rejected": 21735,
+        "candidates": 3039,
+        "offset_eligible": 1088
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": {
+        "model_rows": 392,
+        "edge_rejected": 31,
+        "candidates": 361,
+        "offset_eligible": 223
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": {
+        "model_rows": 32812,
+        "edge_rejected": 31478,
+        "candidates": 1334,
+        "offset_eligible": 210
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": {
+        "model_rows": 21721,
+        "edge_rejected": 19854,
+        "candidates": 1867,
+        "offset_eligible": 692
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": {
+        "model_rows": 34742,
+        "edge_rejected": 32889,
+        "candidates": 1853,
+        "offset_eligible": 572
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": {
+        "model_rows": 40906,
+        "edge_rejected": 39053,
+        "candidates": 1853,
+        "offset_eligible": 317
+      }
+    },
+    "exchange_blend_equal:0.0015": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": {
+        "model_rows": 23809,
+        "edge_rejected": 21564,
+        "candidates": 2245,
+        "offset_eligible": 2245
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": {
+        "model_rows": 31263,
+        "edge_rejected": 30502,
+        "candidates": 761,
+        "offset_eligible": 347
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": {
+        "model_rows": 26176,
+        "edge_rejected": 25095,
+        "candidates": 1081,
+        "offset_eligible": 249
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": {
+        "model_rows": 22487,
+        "edge_rejected": 19173,
+        "candidates": 3314,
+        "offset_eligible": 1832
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": {
+        "model_rows": 20386,
+        "edge_rejected": 20149,
+        "candidates": 237,
+        "offset_eligible": 74
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": {
+        "model_rows": 35643,
+        "edge_rejected": 34777,
+        "candidates": 866,
+        "offset_eligible": 241
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": {
+        "model_rows": 24774,
+        "edge_rejected": 23941,
+        "candidates": 833,
+        "offset_eligible": 315
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": {
+        "model_rows": 392,
+        "edge_rejected": 49,
+        "candidates": 343,
+        "offset_eligible": 212
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": {
+        "model_rows": 32812,
+        "edge_rejected": 32530,
+        "candidates": 282,
+        "offset_eligible": 62
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": {
+        "model_rows": 21721,
+        "edge_rejected": 21327,
+        "candidates": 394,
+        "offset_eligible": 164
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": {
+        "model_rows": 34742,
+        "edge_rejected": 34497,
+        "candidates": 245,
+        "offset_eligible": 103
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": {
+        "model_rows": 40906,
+        "edge_rejected": 40488,
+        "candidates": 418,
+        "offset_eligible": 71
+      }
+    },
+    "exchange_blend_equal:0.003": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": {
+        "model_rows": 23809,
+        "edge_rejected": 22557,
+        "candidates": 1252,
+        "offset_eligible": 1252
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": {
+        "model_rows": 31263,
+        "edge_rejected": 31098,
+        "candidates": 165,
+        "offset_eligible": 74
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": {
+        "model_rows": 26176,
+        "edge_rejected": 25877,
+        "candidates": 299,
+        "offset_eligible": 61
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": {
+        "model_rows": 22487,
+        "edge_rejected": 20739,
+        "candidates": 1748,
+        "offset_eligible": 1248
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": {
+        "model_rows": 20386,
+        "edge_rejected": 20314,
+        "candidates": 72,
+        "offset_eligible": 30
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": {
+        "model_rows": 35643,
+        "edge_rejected": 35351,
+        "candidates": 292,
+        "offset_eligible": 84
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": {
+        "model_rows": 24774,
+        "edge_rejected": 24499,
+        "candidates": 275,
+        "offset_eligible": 87
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": {
+        "model_rows": 392,
+        "edge_rejected": 70,
+        "candidates": 322,
+        "offset_eligible": 196
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": {
+        "model_rows": 32812,
+        "edge_rejected": 32609,
+        "candidates": 203,
+        "offset_eligible": 47
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": {
+        "model_rows": 21721,
+        "edge_rejected": 21609,
+        "candidates": 112,
+        "offset_eligible": 58
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": {
+        "model_rows": 34742,
+        "edge_rejected": 34651,
+        "candidates": 91,
+        "offset_eligible": 49
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": {
+        "model_rows": 40906,
+        "edge_rejected": 40679,
+        "candidates": 227,
+        "offset_eligible": 28
+      }
+    },
+    "exchange_blend_equal:0.005": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": {
+        "model_rows": 23809,
+        "edge_rejected": 23065,
+        "candidates": 744,
+        "offset_eligible": 744
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": {
+        "model_rows": 31263,
+        "edge_rejected": 31155,
+        "candidates": 108,
+        "offset_eligible": 54
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": {
+        "model_rows": 26176,
+        "edge_rejected": 26084,
+        "candidates": 92,
+        "offset_eligible": 20
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": {
+        "model_rows": 22487,
+        "edge_rejected": 21452,
+        "candidates": 1035,
+        "offset_eligible": 824
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": {
+        "model_rows": 20386,
+        "edge_rejected": 20347,
+        "candidates": 39,
+        "offset_eligible": 20
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": {
+        "model_rows": 35643,
+        "edge_rejected": 35505,
+        "candidates": 138,
+        "offset_eligible": 36
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": {
+        "model_rows": 24774,
+        "edge_rejected": 24626,
+        "candidates": 148,
+        "offset_eligible": 34
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": {
+        "model_rows": 392,
+        "edge_rejected": 114,
+        "candidates": 278,
+        "offset_eligible": 162
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": {
+        "model_rows": 32812,
+        "edge_rejected": 32641,
+        "candidates": 171,
+        "offset_eligible": 37
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": {
+        "model_rows": 21721,
+        "edge_rejected": 21639,
+        "candidates": 82,
+        "offset_eligible": 47
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": {
+        "model_rows": 34742,
+        "edge_rejected": 34687,
+        "candidates": 55,
+        "offset_eligible": 36
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": {
+        "model_rows": 40906,
+        "edge_rejected": 40742,
+        "candidates": 164,
+        "offset_eligible": 15
+      }
+    },
+    "exchange_blend_equal:0.01": {
+      "runs/nfl_moneyline_replay_20260907/jan5_18/opportunities.json": {
+        "model_rows": 23809,
+        "edge_rejected": 23513,
+        "candidates": 296,
+        "offset_eligible": 296
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-01/replay/opportunities.json": {
+        "model_rows": 31263,
+        "edge_rejected": 31206,
+        "candidates": 57,
+        "offset_eligible": 31
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-03/replay/opportunities.json": {
+        "model_rows": 26176,
+        "edge_rejected": 26139,
+        "candidates": 37,
+        "offset_eligible": 10
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-05/replay/opportunities.json": {
+        "model_rows": 22487,
+        "edge_rejected": 22273,
+        "candidates": 214,
+        "offset_eligible": 144
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-07/replay/opportunities.json": {
+        "model_rows": 20386,
+        "edge_rejected": 20374,
+        "candidates": 12,
+        "offset_eligible": 2
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-09/replay/opportunities.json": {
+        "model_rows": 35643,
+        "edge_rejected": 35548,
+        "candidates": 95,
+        "offset_eligible": 16
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-11/replay/opportunities.json": {
+        "model_rows": 24774,
+        "edge_rejected": 24689,
+        "candidates": 85,
+        "offset_eligible": 9
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-15/replay/opportunities.json": {
+        "model_rows": 392,
+        "edge_rejected": 211,
+        "candidates": 181,
+        "offset_eligible": 104
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-17/replay/opportunities.json": {
+        "model_rows": 32812,
+        "edge_rejected": 32679,
+        "candidates": 133,
+        "offset_eligible": 24
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-19/replay/opportunities.json": {
+        "model_rows": 21721,
+        "edge_rejected": 21668,
+        "candidates": 53,
+        "offset_eligible": 33
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-21/replay/opportunities.json": {
+        "model_rows": 34742,
+        "edge_rejected": 34720,
+        "candidates": 22,
+        "offset_eligible": 14
+      },
+      "runs/mlb_historical_20260907/dated_fee_primary/2026-07-29/replay/opportunities.json": {
+        "model_rows": 40906,
+        "edge_rejected": 40796,
+        "candidates": 110,
+        "offset_eligible": 3
+      }
+    }
+  },
+  "results": [
+    {
+      "model": "kalshi",
+      "edge_hurdle": 0.0,
+      "sport": "NFL",
+      "accepted": 55,
+      "peak_committed_cash": 758.0953000000027,
+      "peak_offset_credit": 0.0,
+      "accepted_edge": 3.742421456564129,
+      "ending_pnl": -498.02090539177345,
+      "max_drawdown": -610.6713053917734,
+      "daily_sharpe": -0.8059200286761942,
+      "annualized_sharpe_252": -12.79358383489952
+    },
+    {
+      "model": "kalshi",
+      "edge_hurdle": 0.0,
+      "sport": "MLB",
+      "accepted": 3083,
+      "peak_committed_cash": 9999.993199999992,
+      "peak_offset_credit": 3312.191300000004,
+      "accepted_edge": 1019.5634225262847,
+      "ending_pnl": 4482.412088593106,
+      "max_drawdown": -2403.5910542149645,
+      "daily_sharpe": 0.24650066940140347,
+      "annualized_sharpe_252": 3.9130768154823747
+    },
+    {
+      "model": "kalshi",
+      "edge_hurdle": 0.0015,
+      "sport": "NFL",
+      "accepted": 51,
+      "peak_committed_cash": 683.5060000000012,
+      "peak_offset_credit": 0.0,
+      "accepted_edge": 4.934306207975176,
+      "ending_pnl": -48.80945470527843,
+      "max_drawdown": -141.2933,
+      "daily_sharpe": -0.09682095190471275,
+      "annualized_sharpe_252": -1.5369849626424927
+    },
+    {
+      "model": "kalshi",
+      "edge_hurdle": 0.0015,
+      "sport": "MLB",
+      "accepted": 2647,
+      "peak_committed_cash": 9999.994400000003,
+      "peak_offset_credit": 2905.3996000000006,
+      "accepted_edge": 1691.7720315379488,
+      "ending_pnl": 6766.10593430687,
+      "max_drawdown": -1618.408791890983,
+      "daily_sharpe": 0.408064264649579,
+      "annualized_sharpe_252": 6.4778193791713905
+    },
+    {
+      "model": "kalshi",
+      "edge_hurdle": 0.003,
+      "sport": "NFL",
+      "accepted": 59,
+      "peak_committed_cash": 863.1003999999994,
+      "peak_offset_credit": 0.0,
+      "accepted_edge": 16.40392455041982,
+      "ending_pnl": 265.73593639666535,
+      "max_drawdown": -294.64439999999996,
+      "daily_sharpe": 0.3464962942939524,
+      "annualized_sharpe_252": 5.500458149443481
+    },
+    {
+      "model": "kalshi",
+      "edge_hurdle": 0.003,
+      "sport": "MLB",
+      "accepted": 2127,
+      "peak_committed_cash": 9997.230099999997,
+      "peak_offset_credit": 733.3315000000057,
+      "accepted_edge": 1805.5281401619172,
+      "ending_pnl": 9883.017028284848,
+      "max_drawdown": -1649.0832686406586,
+      "daily_sharpe": 0.6454057888211687,
+      "annualized_sharpe_252": 10.245499271653701
+    },
+    {
+      "model": "kalshi",
+      "edge_hurdle": 0.005,
+      "sport": "NFL",
+      "accepted": 50,
+      "peak_committed_cash": 857.7768999999971,
+      "peak_offset_credit": 0.0,
+      "accepted_edge": 21.48231963438777,
+      "ending_pnl": 396.27945337077483,
+      "max_drawdown": -326.5388,
+      "daily_sharpe": 0.4071147383668063,
+      "annualized_sharpe_252": 6.462746116726174
+    },
+    {
+      "model": "kalshi",
+      "edge_hurdle": 0.005,
+      "sport": "MLB",
+      "accepted": 1757,
+      "peak_committed_cash": 7074.732700000035,
+      "peak_offset_credit": 0.0,
+      "accepted_edge": 1634.7983647062522,
+      "ending_pnl": 8760.3176261063,
+      "max_drawdown": -1253.744006664655,
+      "daily_sharpe": 0.5575996932931163,
+      "annualized_sharpe_252": 8.851620717476857
+    },
+    {
+      "model": "kalshi",
+      "edge_hurdle": 0.01,
+      "sport": "NFL",
+      "accepted": 33,
+      "peak_committed_cash": 947.4315999999981,
+      "peak_offset_credit": 0.0,
+      "accepted_edge": 29.885311106102364,
+      "ending_pnl": 472.9007065412639,
+      "max_drawdown": -138.3576,
+      "daily_sharpe": 0.48688157511629576,
+      "annualized_sharpe_252": 7.729005394182795
+    },
+    {
+      "model": "kalshi",
+      "edge_hurdle": 0.01,
+      "sport": "MLB",
+      "accepted": 1126,
+      "peak_committed_cash": 4476.786500000054,
+      "peak_offset_credit": 0.0,
+      "accepted_edge": 1430.4306107914072,
+      "ending_pnl": 5517.817850226881,
+      "max_drawdown": -933.7282000000018,
+      "daily_sharpe": 0.45158449286619917,
+      "annualized_sharpe_252": 7.168681584343108
+    },
+    {
+      "model": "exchange_blend_equal",
+      "edge_hurdle": 0.0,
+      "sport": "NFL",
+      "accepted": 61,
+      "peak_committed_cash": 937.6025000000009,
+      "peak_offset_credit": 0.0,
+      "accepted_edge": 4.049013290769473,
+      "ending_pnl": -446.23027748037947,
+      "max_drawdown": -539.1045,
+      "daily_sharpe": -0.6664366549752093,
+      "annualized_sharpe_252": -10.579353921852961
+    },
+    {
+      "model": "exchange_blend_equal",
+      "edge_hurdle": 0.0,
+      "sport": "MLB",
+      "accepted": 2530,
+      "peak_committed_cash": 9999.781099999998,
+      "peak_offset_credit": 783.5260000000017,
+      "accepted_edge": 619.088166541112,
+      "ending_pnl": 320.68267526942424,
+      "max_drawdown": -1871.9233130964562,
+      "daily_sharpe": 0.027435620955021292,
+      "annualized_sharpe_252": 0.43552698066971246
+    },
+    {
+      "model": "exchange_blend_equal",
+      "edge_hurdle": 0.0015,
+      "sport": "NFL",
+      "accepted": 74,
+      "peak_committed_cash": 841.6416000000063,
+      "peak_offset_credit": 0.0,
+      "accepted_edge": 6.6016850480335325,
+      "ending_pnl": -129.79444931350497,
+      "max_drawdown": -229.99164931350498,
+      "daily_sharpe": -0.2537264267139027,
+      "annualized_sharpe_252": -4.027782156780251
+    },
+    {
+      "model": "exchange_blend_equal",
+      "edge_hurdle": 0.0015,
+      "sport": "MLB",
+      "accepted": 1778,
+      "peak_committed_cash": 8793.414699999996,
+      "peak_offset_credit": 349.1219000000001,
+      "accepted_edge": 774.1785945382695,
+      "ending_pnl": 1045.6452660201278,
+      "max_drawdown": -2112.9358691637067,
+      "daily_sharpe": 0.08442197769793378,
+      "annualized_sharpe_252": 1.3401573490618435
+    },
+    {
+      "model": "exchange_blend_equal",
+      "edge_hurdle": 0.003,
+      "sport": "NFL",
+      "accepted": 37,
+      "peak_committed_cash": 921.736200000003,
+      "peak_offset_credit": 0.0,
+      "accepted_edge": 14.281038850814904,
+      "ending_pnl": -116.18018206187267,
+      "max_drawdown": -488.65001845853806,
+      "daily_sharpe": -0.07851992715522102,
+      "annualized_sharpe_252": -1.246465201293733
+    },
+    {
+      "model": "exchange_blend_equal",
+      "edge_hurdle": 0.003,
+      "sport": "MLB",
+      "accepted": 1161,
+      "peak_committed_cash": 7752.850799999997,
+      "peak_offset_credit": 0.0,
+      "accepted_edge": 780.0081601009427,
+      "ending_pnl": 2026.720849279026,
+      "max_drawdown": -1447.747069840609,
+      "daily_sharpe": 0.19458717231418113,
+      "annualized_sharpe_252": 3.088975597599577
+    },
+    {
+      "model": "exchange_blend_equal",
+      "edge_hurdle": 0.005,
+      "sport": "NFL",
+      "accepted": 55,
+      "peak_committed_cash": 886.2990999999984,
+      "peak_offset_credit": 0.0,
+      "accepted_edge": 21.546845810512384,
+      "ending_pnl": 396.5734942357357,
+      "max_drawdown": -335.72040000000004,
+      "daily_sharpe": 0.39132740108513586,
+      "annualized_sharpe_252": 6.212129906858983
+    },
+    {
+      "model": "exchange_blend_equal",
+      "edge_hurdle": 0.005,
+      "sport": "MLB",
+      "accepted": 851,
+      "peak_committed_cash": 4868.113700000038,
+      "peak_offset_credit": 0.0,
+      "accepted_edge": 735.9455121318185,
+      "ending_pnl": 715.9510598475468,
+      "max_drawdown": -1428.6491232697172,
+      "daily_sharpe": 0.09503013938991632,
+      "annualized_sharpe_252": 1.5085566952891314
+    },
+    {
+      "model": "exchange_blend_equal",
+      "edge_hurdle": 0.01,
+      "sport": "NFL",
+      "accepted": 29,
+      "peak_committed_cash": 756.1392999999953,
+      "peak_offset_credit": 0.0,
+      "accepted_edge": 21.062299526044846,
+      "ending_pnl": 238.5200363966654,
+      "max_drawdown": -185.0355,
+      "daily_sharpe": 0.2515066900802505,
+      "annualized_sharpe_252": 3.9925449301280307
+    },
+    {
+      "model": "exchange_blend_equal",
+      "edge_hurdle": 0.01,
+      "sport": "MLB",
+      "accepted": 537,
+      "peak_committed_cash": 3708.817199999983,
+      "peak_offset_credit": 0.0,
+      "accepted_edge": 649.1496525406473,
+      "ending_pnl": 1197.6409024912978,
+      "max_drawdown": -724.0683652011348,
+      "daily_sharpe": 0.2235785625479568,
+      "annualized_sharpe_252": 3.54919964992316
+    }
+  ],
+  "limitations": [
+    "Historical fills are hypothetical public-print fills with no queue or fill elasticity.",
+    "Sharpe is settlement-day descriptive Sharpe over a short sample.",
+    "Pinnacle is not present in the archived fair-value rows."
+  ]
+}

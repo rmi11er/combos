@@ -1,0 +1,12 @@
+{
+  "entry_basis": "point",
+  "minimum_net_edge_per_share": 0.003,
+  "capital_dollars": 10000,
+  "per_contract_dollars": 100,
+  "per_combo_dollars": 100,
+  "per_fixture_dollars": 250,
+  "settlement_delay_seconds": 0,
+  "timezone": "America/Chicago",
+  "annualization_days": 365,
+  "maximum_yes_premium_dollars": 50
+}

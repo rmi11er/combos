@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "hypothesis_id": "pin-pm-agreement-kalshi-inventory-skew-20260907-v1",
+  "status": "unfitted_research_only",
+  "live_enabled": false,
+  "automatic_promotion": false,
+  "module": "combos.consensus_anchor",
+  "policy": {
+    "anchor_agreement_cents": 0.75,
+    "minimum_kalshi_disagreement_cents": 0.5,
+    "maximum_kalshi_disagreement_cents": 3.0,
+    "maximum_lean_fraction": 0.25,
+    "maximum_anchor_venue_weight": 0.75,
+    "depth_exponent": 0.5,
+    "spread_floor_cents": 1.0,
+    "freshness_half_life_seconds": 60.0,
+    "pinnacle_delay_seconds": 30.0,
+    "pinnacle_max_age_seconds": 90.0,
+    "exchange_max_age_seconds": 15.0,
+    "pregame_buffer_seconds": 60.0
+  },
+  "required_evidence": [
+    "all_three_sources_on_verified_identical_canonical_payoff_and_rule_basis",
+    "explicit_quoted_side_and_causal_mapping_evidence",
+    "verified_snapshot_information_time_separate_from_last_price_change",
+    "causal_price_and_capacity_availability_with_Pinnacle_30_second_delay",
+    "live_actual_two_sided_top_of_book_exchange_capacity_no_imputation",
+    "verified_Pinnacle_USD_stake_limits_converted_to_payout_capacity",
+    "market_specific_dated_exchange_fees_and_balance_precision",
+    "baseline_point_reconciles_to_recorded_normalized_weights"
+  ],
+  "historical_depth_scenario": {
+    "automatic_imputation": false,
+    "requires_request_acknowledgement_reference": true,
+    "polymarket_basis": "equal_to_kalshi",
+    "kalshi_missing_depth_basis": "fixed_historical_payout_capacity",
+    "requires_per_source_assumption_basis_and_reference": true,
+    "pinnacle_limit_imputation_allowed": false,
+    "live_imputation_allowed": false,
+    "unverified_fees_or_raw_books_are_not_made_verified_by_depth_assumption": true
+  },
+  "interpretation": {
+    "mechanism": "Working hypothesis from user and market-maker conversations: inventory and flow may skew Kalshi individual-market quotes while trading costs slow correction; agreement of Pinnacle and Polymarket may provide a conditional probability anchor.",
+    "mechanism_observed_in_our_dataset": false,
+    "fee_band_overlap_can_activate_point_hypothesis": true,
+    "fee_band_overlap_proves_mispricing_or_edge": false,
+    "kalshi_fees_assumed_higher_than_polymarket": false,
+    "requires_Pinnacle": true,
+    "production_baseline_changed": false,
+    "historical_baseline_changed": false,
+    "parameters_selected_from_PnL": false
+  }
+}

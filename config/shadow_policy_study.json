@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "mode": "shadow_research_only",
+  "orders_enabled": false,
+  "policy_reference": "research:source-disagreement-and-broad-quoting-v1:2026-09-07",
+  "policy_available_at": null,
+  "fee_terms_available_at": null,
+  "balance_precision": null,
+  "sports": {
+    "MLB": {
+      "version": "mlb-shadow-candidates-v1",
+      "commercial_markups_per_contract": [0, 0.005, 0.01, 0.02],
+      "variants": [
+        {"name": "existing_stressed", "fair_source": "existing_blend", "reserve_mode": "existing_stressed"},
+        {"name": "blend_point", "fair_source": "existing_blend", "reserve_mode": "point_diagnostic"},
+        {"name": "kalshi_point", "fair_source": "kalshi", "reserve_mode": "point_diagnostic"},
+        {"name": "polymarket_point", "fair_source": "polymarket", "reserve_mode": "point_diagnostic"}
+      ]
+    },
+    "NFL": {
+      "version": "nfl-shadow-candidates-v1",
+      "commercial_markups_per_contract": [0, 0.005, 0.01, 0.02],
+      "variants": [
+        {"name": "existing_stressed", "fair_source": "existing_blend", "reserve_mode": "existing_stressed"},
+        {"name": "blend_point", "fair_source": "existing_blend", "reserve_mode": "point_diagnostic"},
+        {"name": "kalshi_point", "fair_source": "kalshi", "reserve_mode": "point_diagnostic"},
+        {"name": "polymarket_point", "fair_source": "polymarket", "reserve_mode": "point_diagnostic"}
+      ]
+    }
+  }
+}

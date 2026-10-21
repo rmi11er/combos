@@ -1,0 +1,12 @@
+requests<3,>=2.34
+matplotlib<4,>=3.8
+pandas<4,>=2.2
+duckdb<2,>=1.0
+PyYAML<7,>=6
+cryptography<47,>=42
+websockets<16,>=12
+
+[dev]
+pytest<10,>=8
+ruff<1,>=0.8
+mypy<2,>=1.10

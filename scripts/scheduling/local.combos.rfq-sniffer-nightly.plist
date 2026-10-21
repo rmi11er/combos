@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>local.combos.rfq-sniffer-nightly</string>
+	<key>ProcessType</key>
+	<string>Background</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>~/projects/combos/.venv/bin/python</string>
+		<string>~/projects/combos/scripts/rfq_sniffer_nightly.py</string>
+	</array>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>StandardErrorPath</key>
+	<string>~/projects/combos/runs/rfq_sniffer_nightly/dispatcher.error.log</string>
+	<key>StandardOutPath</key>
+	<string>~/projects/combos/runs/rfq_sniffer_nightly/dispatcher.log</string>
+	<key>StartInterval</key>
+	<integer>60</integer>
+	<key>WorkingDirectory</key>
+	<string>~/projects/combos</string>
+</dict>
+</plist>

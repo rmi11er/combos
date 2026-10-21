@@ -1,0 +1,75 @@
+{
+  "catalog": {
+    "hours": 24,
+    "combo_trades": 1472589,
+    "unique_requested_markets": 861668,
+    "metadata_markets": 861668,
+    "missing_tickers": [],
+    "cfb_two_leg_markets": 32674
+  },
+  "required_individual_legs": 4541,
+  "sources": {
+    "legs": {
+      "counts": {
+        "files": 4541,
+        "nonempty_success": 4541
+      },
+      "failures": []
+    },
+    "candles": {
+      "counts": {
+        "files": 4541,
+        "nonempty_success": 4537
+      },
+      "failures": [
+        {
+          "file": "data/raw/candles/KXNCAAF1H-26SEP05BAYAUB-BAY.json.gz",
+          "status": 429
+        },
+        {
+          "file": "data/raw/candles/KXNCAAF1H-26SEP05BALLOSU-OSU.json.gz",
+          "status": 429
+        },
+        {
+          "file": "data/raw/candles/KXNCAAF1H-26SEP05CCARWVU-WVU.json.gz",
+          "status": 429
+        },
+        {
+          "file": "data/raw/candles/KXNCAAF1HSPREAD-26SEP05TXSTTEX-TEX8.json.gz",
+          "status": 429
+        }
+      ]
+    },
+    "candles_retry": {
+      "counts": {
+        "files": 4,
+        "nonempty_success": 4
+      },
+      "failures": []
+    },
+    "rfqs": {
+      "counts": {
+        "files": 1159,
+        "nonempty_success": 1159
+      },
+      "failures": []
+    },
+    "polymarket_history": {
+      "counts": {
+        "files": 1683,
+        "nonempty_success": 1683
+      },
+      "failures": []
+    }
+  },
+  "missing_leg_files": [],
+  "missing_candle_files": [],
+  "polymarket_matching": {
+    "payoff_unmatched": 2850,
+    "matched": 1683,
+    "fixture_unmatched": 8
+  },
+  "cfb_shards": {
+    "KXMVECROSSCATEGORY-SHARD1": 32674
+  }
+}

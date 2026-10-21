@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "datasets": [
+    {"name": "cfb_retained_week", "sport": "cfb", "opportunities": "runs/cfb_full_week_20260907/replay_settlement_refreshed/opportunities.json", "features": "runs/opposite_moneyline_20260907/cfb/features.jsonl.gz"},
+    {"name": "mlb_september_5", "sport": "mlb", "opportunities": "runs/mlb_historical_20260907/replay/opportunities.json", "features": "runs/opposite_moneyline_20260907/mlb/features.jsonl.gz"}
+  ],
+  "spread_measures": ["raw", "fee_expanded"],
+  "regression_specs": ["spread_only", "price_and_leg_count"],
+  "weight": "payout_quantity",
+  "minimum_edge_filter": null,
+  "orders_enabled": false
+}

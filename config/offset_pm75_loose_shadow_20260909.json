@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "status": "shadow_only_research_default",
+  "live_enabled": false,
+  "capital_dollars": 10000,
+  "ticket_max_gross_liability_dollars": 250,
+  "ticket_cap_floor_dollars": 50,
+  "risk_limits_dollars": {
+    "per_contract": 500,
+    "per_combo": 500,
+    "per_fixture": 1000
+  },
+  "moneyline_offset": {
+    "enabled": true,
+    "minimum_ticket_cap_for_offset_policy_dollars": 50,
+    "eligible_scope": "exact_full_game_moneyline_distinct_fixture_team_match",
+    "cash_collateral_credit": false
+  },
+  "pricing": {
+    "model": "liquidity_weighted_kalshi_polymarket_pinnacle",
+    "historical_replay_proxy": "exchange_blend_pm75",
+    "weights": "liquidity_weighted_with_pm75_challenger_and_kalshi_skew_prior",
+    "kalshi_skew_prior": "stronger_taker_fees_can_skew_kalshi_book",
+    "pinnacle_delay_seconds": 30,
+    "pinnacle_required_when_verified": true
+  },
+  "edge_charge": {
+    "minimum_net_edge_per_contract": 0.0015,
+    "unit": "dollars_per_contract",
+    "after_fee": true
+  },
+  "marginal_reserve_fraction": 0,
+  "execution": {
+    "mode": "shadow",
+    "automatic_promotion": false,
+    "hypothetical_full_fill_replay": true
+  },
+  "notes": [
+    "The saved historical opportunities do not contain a verified three-source Pinnacle liquidity-weighted fair value; the replay proxy is the archived PM75 model.",
+    "Do not use this file to enable live order submission until offset-aware capacity accounting and three-source timing/mapping validation pass."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "reserve_fraction": 0,
+  "edge_per_combo": 0.003,
+  "dynamic_edge": {
+    "base_edge_per_combo": 0.003,
+    "disagreement_soft_cents": 2.0,
+    "disagreement_slope_per_cent": 0.0005,
+    "thin_depth_dollars": 1000.0,
+    "thin_depth_slope": 0.001,
+    "stale_padding_cents": 0.5,
+    "stale_padding_slope": 0.00025,
+    "maximum_edge_per_combo": 0.01
+  },
+  "native_stake_usd_scale": 1,
+  "capacity_mode": "all_admitted_fill_no_release",
+  "capital_dollars": 10000,
+  "caps": {"contract": 500, "combo": 500, "fixture": 500},
+  "apply_pricing_risk_multiplier": true,
+  "status": "shadow_only",
+  "automatic_promotion": false
+}

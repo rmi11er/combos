@@ -1,0 +1,106 @@
+<div id="combo-research-atlas">
+  <section id="atlas-marks"><h2>1 · NFL price markouts</h2><div class="atlas-plots"></div></section>
+  <section id="atlas-volume"><h2>2 · Volume-conditioned markouts</h2><div class="atlas-plots"></div></section>
+  <section id="atlas-clock"><h2>3 · Volume time before first game</h2><div class="atlas-plots"></div></section>
+  <section id="atlas-hedge"><h2>4 · Hedge economics</h2><div class="atlas-plots"></div></section>
+  <section id="atlas-inventory"><h2>5 · Inventory-relief pricing</h2><div class="atlas-plots"></div></section>
+  <section id="atlas-samegame"><h2>6 · Same-game opportunity and offsets</h2><div class="atlas-plots"></div></section>
+</div>
+<style>
+#combo-research-atlas {color:var(--foreground);width:100%}
+#combo-research-atlas section {margin-block:2rem}
+#combo-research-atlas figure {margin:0 0 1.5rem;min-width:0}
+#combo-research-atlas figcaption {font-weight:500;margin-block:.5rem}
+#combo-research-atlas .atlas-plots {display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:1.5rem}
+#combo-research-atlas .atlas-chart {display:block;width:100%;overflow:visible}
+#combo-research-atlas .atlas-chart text {fill:var(--foreground)}
+#combo-research-atlas .atlas-grid {stroke:var(--border);stroke-width:1}
+#combo-research-atlas .atlas-legend {display:flex;flex-wrap:wrap;gap:.3rem 1rem}
+#combo-research-atlas .atlas-legend span {display:inline-flex;align-items:center;gap:.35rem}
+#combo-research-atlas .atlas-swatch {width:1.2rem;height:.2rem;display:inline-block}
+#combo-research-atlas .atlas-values {overflow-wrap:anywhere}
+#combo-research-atlas details {margin-block:.4rem}
+#combo-research-atlas table {width:100%;border-collapse:collapse}
+#combo-research-atlas th,#combo-research-atlas td {text-align:left;padding:.3rem;border-bottom:1px solid var(--border);overflow-wrap:anywhere}
+</style>
+<script type="application/json" id="atlas-data">__ATLAS_DATA__</script>
+<script>
+(() => {
+  const root=document.getElementById('combo-research-atlas');
+  const data=JSON.parse(document.getElementById('atlas-data').textContent);
+  const NS='http://www.w3.org/2000/svg';
+  const color=i=>`var(--viz-series-${i+1})`;
+  function node(tag,attrs={},text=null){const n=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([k,v])=>n.setAttribute(k,v));if(text!==null)n.textContent=text;return n;}
+  const charts=[];
+  function plot(section,title,labels,series,unit,range=null){
+    const figure=document.createElement('figure'),caption=document.createElement('figcaption');caption.textContent=title;figure.append(caption);
+    const legend=document.createElement('div');legend.className='atlas-legend text-small';
+    series.forEach((s,i)=>{const label=document.createElement('span'),swatch=document.createElement('i');swatch.className='atlas-swatch';swatch.style.background=color(i);label.append(swatch,document.createTextNode(s.name));legend.append(label)});figure.append(legend);
+    const svg=node('svg',{class:'atlas-chart',role:'img','aria-label':`${title}. ${unit}. Exact values follow the chart.`});figure.append(svg);
+    const detail=document.createElement('details'),summary=document.createElement('summary');summary.textContent='Exact values and sample counts';detail.append(summary);
+    const table=document.createElement('table');table.className='text-small';const head=document.createElement('tr');
+    ['Bin',...series.map(s=>s.name)].forEach(t=>{const th=document.createElement('th');th.textContent=t;head.append(th)});table.append(head);
+    labels.forEach((label,j)=>{const tr=document.createElement('tr');[label,...series.map(s=>s.values[j]==null?'Unavailable':`${s.values[j].toFixed(3)}${s.counts?' · n='+s.counts[j]:''}`)].forEach(t=>{const td=document.createElement('td');td.textContent=t;tr.append(td)});table.append(tr)});detail.append(table);figure.append(detail);
+    root.querySelector(`#atlas-${section} .atlas-plots`).append(figure);
+    function draw(){
+      const w=Math.max(280,figure.clientWidth),h=260,left=54,right=18,top=34,bottom=46;
+      svg.setAttribute('viewBox',`0 0 ${w} ${h}`);svg.replaceChildren();svg.append(node('title',{},title));
+      const all=series.flatMap(s=>s.values).filter(v=>v!==null&&Number.isFinite(v));
+      let lo=range?range[0]:Math.min(0,...all),hi=range?range[1]:Math.max(0,...all);if(hi===lo)hi=lo+1;
+      if(!range){const pad=(hi-lo)*.12;lo-=pad;hi+=pad;}
+      const x=j=>left+j*(w-left-right)/Math.max(1,labels.length-1),y=v=>top+(hi-v)*(h-top-bottom)/(hi-lo);
+      svg.append(node('text',{x:left,y:18,class:'text-small'},unit));
+      for(let t=0;t<=4;t++){const v=lo+(hi-lo)*t/4;svg.append(node('line',{x1:left,x2:w-right,y1:y(v),y2:y(v),class:'atlas-grid'}));svg.append(node('text',{x:left-8,y:y(v)+4,'text-anchor':'end',class:'text-small'},v.toFixed(Math.max(Math.abs(lo),Math.abs(hi))>10?0:2)));}
+      labels.forEach((label,j)=>{svg.append(node('text',{x:x(j),y:h-18,'text-anchor':j===0?'start':j===labels.length-1?'end':'middle',class:'text-small'},label));});
+      series.forEach((s,i)=>{
+        let path='';s.values.forEach((v,j)=>{if(v===null){path+=' ';return;}const previous=j>0&&s.values[j-1]!==null;path+=`${previous?'L':'M'}${x(j)},${y(v)} `});
+        svg.append(node('path',{d:path,fill:'none',stroke:color(i),'stroke-width':2,'stroke-dasharray':i%2?'5 3':'none'}));
+        s.values.forEach((v,j)=>{if(v===null){if(series.length===1)svg.append(node('text',{x:x(j),y:h-bottom-10,'text-anchor':j===0?'start':j===labels.length-1?'end':'middle',class:'text-small'},'n=0'));return;}const mark=node(i%2?'rect':'circle',i%2?{x:x(j)-3,y:y(v)-3,width:6,height:6,fill:color(i)}:{cx:x(j),cy:y(v),r:3,fill:color(i)});mark.setAttribute('data-tooltip',`${s.name}: ${v.toFixed(3)} ${unit}${s.counts?' · n='+s.counts[j]:''}`);svg.append(mark)});
+      });
+    }
+    charts.push({figure,draw});draw();
+  }
+  const horizons=['60','300','900','3600','close'],hl=['1m','5m','15m','60m','Close'];
+  const balanced=period=>horizons.map(h=>data.balanced_markouts.find(r=>r.period===period&&r.horizon===h));
+  plot('marks','Same prints at every horizon · age ≤180s',hl,['train','test'].map(p=>({name:p==='train'?'Jan 5–11 · n=314':'Jan 12–18 · n=53',values:balanced(p).map(r=>r.mean_cents),counts:balanced(p).map(r=>r.prints)})),'Seller net markout · cents / combo');
+  const cutKeys=['activity_bucket','daily_bucket','lead_bucket','premium_bucket','spread_bucket','nlegs'];
+  function matching(r,dimension){return r.period==='test'&&r.horizon==='3600'&&cutKeys.filter(k=>k in r).join(',')===dimension;}
+  [['daily_bucket',['low','medium','high'],'Day’s final volume · retrospective'],['activity_bucket',['low','medium','high'],'Prior-hour volume · known at entry'],['lead_bucket',['<1h','1-6h','6-24h','24h+'],'Time to first kickoff'],['premium_bucket',['<10c','10-25c','25-50c','50c+'],'Combo premium'],['spread_bucket',['<=1c','1-2c','>2c'],'Mean leg spread'],['nlegs',[2,3,4],'Leg count']].forEach(([dim,bins,title])=>{
+    const rows=bins.map(b=>data.markout_cuts.find(r=>matching(r,dim)&&r[dim]===b));
+    plot('volume',`${title} · later period`,bins.map(String),[{name:'60-minute mark · edge ≥0.3¢',values:rows.map(r=>r?r.mean_cents:null),counts:rows.map(r=>r?r.prints:0)}],'Seller net markout · cents / combo',[-.5,1.5]);
+  });
+  plot('volume','Later-period predictive error',hl,['controls','volume','time','volume_time'].map(name=>({name,values:horizons.map(h=>data.predictive_checks.find(r=>r.horizon===h&&r.model===name).test_mae_cents)})),'Mean absolute error · cents / combo');
+  ['nfl','mlb'].forEach(sport=>{
+    const rates=data[`${sport}_intensity_6h`];
+    plot('clock',`${sport.toUpperCase()} · contracts traded per minute`,['6–3h','3–1h','60–15m','15–1m'],['train','test'].map(p=>({name:p==='train'?'Earlier period':'Later period',values:rates.filter(r=>r.period===p).map(r=>r.contracts_per_minute)})),'Contracts / minute · equal-day kickoff group');
+    const rows=data[`${sport}_clock_6h`].filter(r=>r.period==='test').slice().reverse();
+    plot('clock',`${sport.toUpperCase()} · final 6h window · later period`,rows.map(r=>r.lead_hours===1/60?'1m':r.lead_hours+'h'),[
+      {name:'Equal date',values:rows.map(r=>100*r.remaining_fraction_equal_day)},
+      {name:'Contract weighted',values:rows.map(r=>100*r.remaining_fraction_volume_weighted)}],'Volume still to trade · % of final-6h total',[0,100]);
+    const score=data[`${sport}_forecast_scores`].filter(r=>sport==='mlb'?[.25,1,3,5].includes(r.lead_hours):[1,3,6,24].includes(r.lead_hours));
+    plot('clock',`${sport.toUpperCase()} · remaining-volume forecast`,score.map(r=>r.lead_hours===.25?'15m':r.lead_hours+'h'),[
+      {name:'Trained volume clock',values:score.map(r=>100*r.clock_wape)},
+      {name:'Constant pace',values:score.map(r=>100*r.constant_wape)}],'Out-of-period absolute error / actual · %');
+  });
+  plot('hedge','Crossing into leg delta hedges · later period',['0','0.035','0.07'],[
+    {name:'After entry spread + leg fees',values:[0,.035,.07].map(rate=>data.hedges.find(r=>r.period==='test'&&r.mode==='entry_delta_friction'&&r.leg_fee_coefficient===rate).mean_cents)},
+    {name:'Before leg hedge costs',values:[0,.035,.07].map(()=>data.hedges.find(r=>r.period==='test'&&r.mode==='entry_delta_friction').unhedged_entry_mean_cents)}],'Cents / combo · x = leg fee coefficient');
+  plot('hedge','Leg hedge roundtrip · later period · n=53',hl,[0,.035,.07].map(rate=>({name:`Fee coefficient ${rate}`,values:horizons.map(h=>data.hedges.find(r=>r.period==='test'&&r.mode==='delta_roundtrip_mark'&&r.leg_fee_coefficient===rate&&r.horizon===h).mean_cents)})),'Combo fair mark + leg roundtrip · cents');
+  ['full','later'].forEach(period=>{
+    const base=data.inventory.find(r=>r.period===period&&r.arm==='net');
+    plot('inventory',`${period==='full'?'Jan 5–18':'Jan 12–18'} · fixture-constrained sensitivity`,['80%','90%','100%'],[
+      {name:'Flat 0.3¢',values:[.8,.9,1].map(()=>base.pnl)},
+      ...[.1,.2].map(edge=>({name:`Reducing-only ${edge}¢`,values:[.8,.9,1].map(t=>data.inventory.find(r=>r.period===period&&r.arm==='relief'&&r.trigger===t&&r.relief_edge_cents===edge).pnl)}))],'Settlement PnL · dollars · x = trigger');
+  });
+  const fixtures=[...new Set(data.samegame_bounds.map(r=>r.fixture))];
+  const full=fixtures.map(f=>data.samegame_bounds.find(r=>r.fixture===f&&r.scenario==='chronological'&&r.print_fraction===1));
+  plot('samegame','Native-market complement bound · observed trade sizes',['1st 25%','1st 50%','All prints'],[
+    {name:'Pooled guaranteed payout reduction',values:[.25,.5,1].map(fr=>{const rows=data.samegame_bounds.filter(r=>r.scenario==='chronological'&&r.print_fraction===fr);return 100*rows.reduce((s,r)=>s+r.guaranteed_reduction_units,0)/rows.reduce((s,r)=>s+r.gross_payout_units,0)})},
+    {name:'All-YES selection stress',values:[0,0,0]}],'Reduction vs gross payout · %',[0,50]);
+  const daily=data.samegame_daily;
+  plot('samegame','Same-game share of scoped pregame prints',['Jan 5–11','Jan 12–18'],[{name:'2–4-leg fullgame score-market combos',values:[0,1].map(p=>{const days=daily.filter(r=>(r.date<'2026-01-12'?0:1)===p);const same=days.reduce((s,r)=>s+(r.counts.same_game_containing||0),0);const distinct=days.reduce((s,r)=>s+(r.counts.distinct||0),0);return 100*same/(same+distinct)})}],'Same-game-containing prints · %',[0,100]);
+  const observer=new ResizeObserver(()=>charts.forEach(c=>c.draw()));charts.forEach(c=>observer.observe(c.figure));
+  root.dataset.chartCount=charts.length;
+  root.dataset.ready='true';
+})();
+</script>

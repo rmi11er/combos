@@ -1,0 +1,29 @@
+{
+  "provider": "oddspapi_v4",
+  "bookmakers": [
+    "pinnacle+30"
+  ],
+  "transport": "REST",
+  "nominal_delay_seconds": 30,
+  "preferred_endpoint": "odds-by-tournaments",
+  "tournament_ids": [
+    31
+  ],
+  "active_poll_seconds": 30,
+  "idle_poll_seconds": 300,
+  "active_definition": "At least one reviewed pregame fixture is enabled for quoting; otherwise idle discovery only",
+  "minimum_trigger_interval_seconds": 30,
+  "subscription_request_limit": 100000,
+  "subscription_price_dollars_user_reported": 70,
+  "reserve_fraction": 0.1,
+  "billing_cycle_start": 1788805399.0,
+  "billing_cycle_end": 1791397399.0,
+  "comment": "Active account confirms pinnacle+30, football sport 14, NFL tournament 31, 100k requests, no in-play/player props/WebSocket entitlement. Subscription dates populated from account. Refresh known_used after probe before starting collector. Exact selectors, USD stake-limit units, payoff and timestamp semantics still need verification.",
+  "known_used": 17,
+  "budget_path": "data/oddspapi_subscription_budget.sqlite",
+  "sport_id": 14,
+  "account_metadata_reference": "runs/oddspapi_smoke_20260907/01_account.json.gz",
+  "tournament_reference": "runs/oddspapi_smoke_20260907/03_tournaments.json.gz",
+  "usage_verified_at": 1788809505.650731,
+  "usage_reference": "runs/cfb_fair_pilot_20260907/acquisition.json"
+}

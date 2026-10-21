@@ -1,0 +1,57 @@
+{
+  "mode": "shadow",
+  "sport": "NFL",
+  "sports": [
+    "MLB",
+    "NFL"
+  ],
+  "capital_dollars": 10000,
+  "per_contract_dollars": 500,
+  "per_combo_dollars": 500,
+  "per_fixture_dollars": 1000,
+  "maximum_committed_dollars": 10000,
+  "maximum_ticket_gross_liability_dollars": 250,
+  "minimum_net_edge_per_share": 0.003,
+  "correlation_rho": 0.05,
+  "correlation_tail": {
+    "enabled": true,
+    "reject_reserve_cents": 23.9065,
+    "basis": "frozen_development_top_1_percent_reserve"
+  },
+  "moneyline_offset": {
+    "enabled": true,
+    "eligible_scope": "exact_full_game_moneyline_distinct_fixture_team_match",
+    "net_contract_and_fixture_risk_buckets": true,
+    "cash_collateral_credit": false
+  },
+  "quote_lifetime_seconds": 3,
+  "maximum_processing_lag_seconds": 2,
+  "maximum_combo_book_age_seconds": 5,
+  "maximum_combo_subscriptions": 100,
+  "maximum_unmapped_leg_subscriptions": 200,
+  "markout_horizons_seconds": [
+    5,
+    30,
+    120
+  ],
+  "markout_grace_seconds": 5,
+  "mappings": [],
+  "combo_terms": {},
+  "comment": "Shadow-only loose policy for MLB/NFL. Three-source liquidity-weighted fair value required; Kalshi-only control retained. $500/$500/$1,000 contract/combo/fixture limits, $250 maximum gross ticket liability, exact moneyline offset risk netting without cash credit, 0.30c after-fee edge hurdle, zero reserve, and rejection of the frozen top-1% correlation-reserve tail. Unknown mappings, stale/disagreement inputs, and unreviewed Pinnacle selectors fail closed. Full-game moneyline Pinnacle mappings may use the rules-vetted adapter; all other families remain blocked. Observation-only player-prop mappings may be collected but never priced.",
+  "minimum_legs": 2,
+  "maximum_legs": 4,
+  "pregame_only": true,
+  "pregame_cutoff_seconds": 60,
+  "observation_only_mappings": [],
+  "observation_scope": {
+    "player_props": true,
+    "quote_eligible": false,
+    "purpose": "collect market books and RFQ opportunity diagnostics; never enters fair value or combo pricing"
+  },
+  "pinnacle_settlement_policies": {
+    "full_game_moneyline": "full_game_moneyline_rules_v1",
+    "other_families": "blocked_pending_family_specific_review"
+  },
+  "shadow_allow_unreviewed_families": true,
+  "shadow_unreviewed_policy": "price_with_available_venues_and_record_missing_source; never live"
+}

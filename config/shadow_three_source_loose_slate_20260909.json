@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "status": "shadow_only",
+  "live_enabled": false,
+  "slate": "current_week_mlb_nfl",
+  "sports": ["MLB", "NFL"],
+  "capital_dollars": 10000,
+  "risk_limits_dollars": {
+    "per_contract": 500,
+    "per_combo": 500,
+    "per_fixture": 1000,
+    "max_ticket_gross_liability": 250
+  },
+  "moneyline_offset": {
+    "enabled": true,
+    "minimum_ticket_cap_floor": 50,
+    "requires_exact_fixture_and_team_match": true,
+    "cash_collateral_credit": false
+  },
+  "pricing": {
+    "fair_value": "liquidity_weighted_kalshi_polymarket_pinnacle",
+    "source_weights": "normalized_available_depth_with_kalshi_skew_prior",
+    "kalshi_skew_prior": "stronger_taker_fees_can_skew_kalshi_book",
+    "pinnacle_delay_seconds": 30,
+    "pinnacle_max_age_seconds": 90,
+    "require_all_three_sources": true,
+    "kalshi_only_control": true
+  },
+  "entry": {
+    "basis": "point",
+    "minimum_net_edge_after_fee": 0.003,
+    "unit": "dollars_per_combo_contract",
+    "marginal_reserve_fraction": 0
+  },
+  "scope": {
+    "pregame_only": true,
+    "pregame_cutoff_seconds": 60,
+    "minimum_legs": 2,
+    "maximum_legs": 4,
+    "distinct_fixtures": true,
+    "player_props": false
+  },
+  "guards": {
+    "creator_blacklist_before_admission": true,
+    "stale_depth_and_disagreement_halts": true,
+    "unknown_payoff_or_mapping_halts": true,
+    "automatic_promotion": false
+  },
+  "notes": [
+    "This is a shadow configuration only; it does not authorize orders.",
+    "Current NFL capture has observed three-venue keys but Pinnacle pricing is blocked pending payoff/selector review.",
+    "A Kalshi-only control is retained for paired out-of-sample comparison."
+  ]
+}

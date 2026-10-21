@@ -1,0 +1,16 @@
+# Bounded recovery of public-data retry exhaustion
+
+The frozen collector makes five attempts for temporary HTTP/transport failures, then raises `RuntimeError: Public request retries exhausted`. The frozen batch classifier does not recognize that final message as transient. This explains the July 17/19/23 stops; the July 23 pause ended in a confirmed process exit, not merely an observation timeout. Its second attempt reused cached responses and completed.
+
+`scripts/supervise_batch_recovery.py` is an external supervisor, preserving the existing batch generation and research code. Its pinned plan is `config/mlb_batch_recovery_20260908.json`. It attaches to an exact observed process identity, monitors without interrupting it, and only resumes after the parent is gone, the latest failed child is absent, and the exact terminal exception matches the allowlist. A batch lock prevents duplicate execution. It retains the persisted default two attempts per stage and 15,000 metadata requests per attempt; it does not reset counters, change source mappings, retry permanent errors or enlarge budgets. Request logs remain cumulative on disk across attempts.
+
+The supervisor stops on attempt exhaustion, a different failure, changed process identity, changed pinned source/plan/generation, or an unexpected surviving child. It records restart time, stage, prior attempt count and failure-log hash. A `batch_finished` status describes batch termination, including explicitly recorded pricing gaps; it is not proof the overall research/live-trading goal is achieved.
+
+Four tests passed in 30.32 seconds, including a local no-network integration test that attaches to a live fixture, waits for its exit, resumes once, and observes completion. Real initial attachment was also verified. The first actual automatic recovery remains to be observed; no claim of it is made here.
+
+Current supervisor: PID 20360, session 28433, watching batch PID 20198, session 26338. Read `runs/morning_research_20260908/batch_recovery_supervisor/status.json` for the current PID. Future restarted batches write to that directory's `batch_restarts.log`; stage logs and completion certificates retain their existing paths. Do not launch another batch based on the old historical log alone.
+
+This change addresses recurring recovery interruptions while all 31 dates and the broader five follow-up workstreams remain in scope. Raw data and August outcomes are untouched. July 23 collection/pricing/report stages completed after the manual resume; its native and model audits are next.
+# First observed production recovery
+
+At September8 21:56:48 Chicago the supervisor observed the original batch and July25 collector exit after the exact allowlisted public-request retry exhaustion. It recorded the failed log hash and resumed the same batch configuration at cohort attempt2, preserving the two-attempt limit and15000GETbudget per attempt. New batchPID22117 and its child22120 were independently observed live. This is the first actual recovery observed beyond the local fixture test; July25 completion remains unproven. Runtime evidence is `runs/morning_research_20260908/batch_recovery_supervisor/status.json`; resumed batch output is in that directory's `batch_restarts.log`.

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "status": "shadow_only_provisional",
+  "superseded_by": "config/tonight_shadow_mlb_nfl_three_source_loose_20260909.json",
+  "live_enabled": false,
+  "reason": "August MLB held-out results support capacity-aware testing but do not validate NFL three-source pricing or execution",
+  "capital_dollars": 10000,
+  "edge_charge": {
+    "minimum_net_edge_per_combo_contract": 0.003,
+    "unit": "dollars_per_contract",
+    "calibration_sweep": [0.001, 0.003, 0.005],
+    "selection": "0.003 until independent NFL acceptance/fill evidence exists"
+  },
+  "risk_limits_dollars": {
+    "maximum_committed": 5000,
+    "per_underlying_contract": 500,
+    "per_combo": 500,
+    "per_fixture": 500,
+    "disagreement_regime_multiplier": 0.5
+  },
+  "scope": {
+    "minimum_legs": 2,
+    "maximum_legs": 4,
+    "pregame_only": true,
+    "player_props": false,
+    "full_size_rfq": true,
+    "sell_combo_yes_by_buying_no": true
+  },
+  "fair_model": {
+    "baseline": "liquidity_weighted_kalshi_polymarket_pinnacle",
+    "pinnacle_delay_seconds": 30,
+    "consensus_anchor": "shadow_feature_only",
+    "maximum_anchor_lean_fraction": 0.25,
+    "hard_disagreement_halt_cents": 5,
+    "full_game_tie_probability": 0.01,
+    "pinnacle_price_mapping_verified": false
+  },
+  "creator_policy": {
+    "mode": "log_and_review",
+    "automatic_blacklist": false,
+    "required_evidence": ["creator_id", "rfq_id", "legs", "source_prices", "response", "markouts"],
+    "review_window_days": 3
+  },
+  "promotion_gates": [
+    "funded_account_balance_and_precision_reconciled",
+    "all_production_leg_payoff_mappings_verified",
+    "pinnacle_mapping_and_stake_currency_verified",
+    "live_fill_and_cancellation_reconciliation_passed",
+    "creator_blacklist_reviewed",
+    "independent_out_of_sample_acceptance_markouts"
+  ]
+}

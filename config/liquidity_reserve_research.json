@@ -1,0 +1,11 @@
+{
+  "model": "liquidity_uncertainty_floor_v1",
+  "status": "unfitted_research_only",
+  "live_enabled": false,
+  "automatic_promotion": false,
+  "depth_multiplier": 1.0,
+  "width_floor_cents": 1.0,
+  "fixed_comparisons": ["unchanged_baseline", "width_only_depth_multiplier_0", "width_and_depth_multiplier_1"],
+  "historical_depth_imputation": "explicit_sensitivity_only_no_empirical_depth_claim",
+  "live_depth_imputation_allowed": false
+}

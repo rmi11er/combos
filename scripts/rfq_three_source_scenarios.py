@@ -1,0 +1,108 @@
+"""Causal RFQ-arrival pricing scenarios; no simulated fills or account allocations."""
+import argparse
+from collections import Counter
+from copy import deepcopy
+import hashlib
+import json
+import math
+from pathlib import Path
+import sys
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
+from combos.event_store import EventStore,rfq_payload
+from combos.verified_book_state import VerifiedBookState
+from combos.rfq_scope import check_legs,check_mappings
+from combos.pinnacle_matching import bind_selectors
+from combos.pinnacle_feed import fixture_index,same_native_market_identity
+from combos.payoff_enumeration import review
+from combos.snapshot_age import delivery_observation_time
+from combos.observations import Observation
+from combos.pricing import Interval,pinnacle_fair
+from combos.weighted_fair import WeightPolicy,weighted_fair
+
+
+def run(capture,catalog_path,out):
+    runtime=json.loads((capture/'runtime.json').read_text());policy=WeightPolicy(**json.loads((capture/'weighting.json').read_text()))
+    catalog=json.loads(catalog_path.read_text());mappings={m['kalshi_ticker']:m for m in runtime['mappings']}
+    pm=VerifiedBookState();kalshi={};pin=None;reviews={};rows=[];counts=Counter();store=EventStore(capture/'events.sqlite');seq=0
+    try:
+        while True:
+            events=store.read(seq,1000)
+            if not events:break
+            for event in events:
+                seq=event['seq'];at=event['received_at'];r=event['payload'];kind=event['kind'];pm.consume(event)
+                if kind=='venue_reset' and event['source']=='kalshi':kalshi.clear()
+                if kind=='venue_reset' and event['source']=='pinnacle':pin=None
+                if kind=='observation' and r.get('venue')=='kalshi':kalshi[r['market_key']]=r
+                if kind=='external_raw' and event['source']=='pinnacle':
+                    fixtures=fixture_index(r['payload']);candidate=deepcopy(runtime['mappings'])
+                    bind_selectors(candidate,list(fixtures.values()),catalog)
+                    mappings={m['kalshi_ticker']:m for m in candidate}
+                    observed,_=delivery_observation_time(r,r['retrieved_at'],30,runtime['pinnacle_freshness_policy'])
+                    pin={'fixtures':fixtures,'observed':observed,'available':max(at,r['retrieved_at']),'seq':seq}
+                msg=rfq_payload(event)
+                if msg is None:continue
+                result={'source_seq':seq,'rfq_id':msg['id'],'at':at,'market_ticker':msg.get('market_ticker'),
+                    'requested_contracts':msg.get('contracts_fp'),'target_cost_dollars':msg.get('target_cost_dollars')}
+                try:
+                    legs=msg.get('mve_selected_legs') or [];check_legs(legs,runtime)
+                    selected=[mappings.get(leg['market_ticker']) for leg in legs];check_mappings(legs,selected,runtime)
+                    if pin is None or pin['available']>at:raise ValueError('pinnacle_not_yet_available')
+                    inputs=[]
+                    for leg,mapping in zip(legs,selected):
+                        key=mapping['market_key'];policy.check_pregame(mapping['start_at'],at,'pregame')
+                        k=kalshi.get(key);pair=pm.pair(key,at);p=pair['candidate']
+                        if not k or not p:raise ValueError('exchange_candidate_coverage_missing')
+                        spec=mapping.get('pinnacle')
+                        if not spec:raise ValueError('exact_pinnacle_selector_missing')
+                        fixture=pin['fixtures'][spec['fixture_id']];book=fixture['bookmakerOdds']['pinnacle+30'];market=book['markets'][spec['market_id']]
+                        identity=(key,spec['selector_reference'])
+                        if identity not in reviews:reviews[identity]=review(mapping,fixture)
+                        if reviews[identity]['status'] not in ('completed_period_binary_verified','void_basis_required'):raise ValueError('conditional_payoff_unverified')
+                        if fixture['statusId']!=0 or book['bookmakerIsActive'] is not True or book['suspended'] is not False or market['marketActive'] is not True:raise ValueError('pinnacle_inactive')
+                        if not same_native_market_identity(spec['bookmaker_market_id'],market['bookmakerMarketId'],fixture,book,spec):raise ValueError('pinnacle_identity_changed')
+                        odds=[];limits=[]
+                        for side in ('yes','no'):
+                            selector=spec[side];v=market['outcomes'][selector['outcome_id']]['players']['0']
+                            if v['active'] is not True or v['bookmakerOutcomeId']!=selector['bookmaker_outcome_id']:raise ValueError('pinnacle_outcome_inactive_or_changed')
+                            odds.append(float(v['price']));limits.append(float(v['limit']))
+                        inputs.append((leg,mapping,Observation.from_record(k),Observation.from_record(p),odds,limits,bool(pair['baseline'])))
+                    scenarios=[]
+                    for conversion in (.1,1.,10.):
+                        values=[];uppers=[];details=[]
+                        for leg,mapping,k,p,odds,limits,baseline in inputs:
+                            interval=pinnacle_fair(*odds)
+                            tie=.01 if mapping['market_type']=='moneyline' and mapping.get('period','full_game')=='full_game' else 0
+                            point=(1-tie)*interval.point+.5*tie
+                            lower=.995*((1-tie)*interval.lower+.5*tie)
+                            upper=.995*((1-tie)*interval.upper+.5*tie)+.005
+                            observation=Observation(mapping['market_key'],'pinnacle',pin['observed'],pin['available'],True,
+                                Interval(lower,point,upper),limits[1]*odds[1]*conversion,limits[0]*odds[0]*conversion,
+                                'captured_event:'+str(pin['seq']),mapping['mapping_reference'],None)
+                            fair=weighted_fair([k,p,observation],at,'pregame',policy)
+                            if not fair['guard']['quote_allowed']:raise ValueError('scenario_interval_disagreement_halt')
+                            f=fair['fair'];values.append(f['point'] if leg['side']=='yes' else 1-f['point'])
+                            uppers.append(f['upper'] if leg['side']=='yes' else 1-f['lower'])
+                            details.append({'market_key':mapping['market_key'],'side':leg['side'],'family':mapping.get('period','full_game')+':'+mapping['market_type'],
+                                'selected_point':values[-1],'selected_upper':uppers[-1],
+                                'weights':{v:d['weight'] for v,d in fair['venues'].items()},'baseline_pm_fresh':baseline,
+                                'exchange_source_references':[k.source_reference,p.source_reference],'pinnacle_seq':pin['seq']})
+                        scenarios.append({'assumed_usd_per_native_unit':conversion,'independent_combo_point':math.prod(values),
+                            'independent_marginal_upper':math.prod(uppers),'legs':details})
+                    result.update(status='scenario_priced',nlegs=len(legs),scenarios=scenarios)
+                except (ValueError,KeyError,TypeError) as exc:result.update(status='excluded',reason=str(exc))
+                counts[result.get('reason','scenario_priced')]+=1;rows.append(result)
+    finally:store.close()
+    out.mkdir(parents=True,exist_ok=False)
+    summary={'rfqs':len(rows),'counts':dict(counts),'priced_leg_counts':dict(Counter(r['nlegs'] for r in rows if r['status']=='scenario_priced')),
+        'assumptions':{'full_game_moneyline_tie_probability':.01,'exception_probability_upper':.005,'exception_payout':[0,1],
+                       'native_stake_to_usd_conversions':[.1,1,10],'combo_dependence':'independence scenario'},
+        'orders_submitted':0,'fills_estimated':False,'risk_allocation_applied':False,
+        'hashes':{str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in (capture/'runtime.json',capture/'readiness.json',catalog_path,Path(__file__))}}
+    (out/'summary.json').write_text(json.dumps(summary,indent=2));(out/'decisions.json').write_text(json.dumps(rows))
+    return summary
+
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser(description=__doc__)
+    for name in ('capture','catalog','out'):p.add_argument('--'+name,required=True,type=Path)
+    a=p.parse_args();print(json.dumps(run(a.capture,a.catalog,a.out)))

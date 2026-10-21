@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "freeze_id": "candidate_shadow_liquidity_weighted_three_source_20260911",
+  "status": "research_frozen_shadow_only",
+  "orders_enabled": false,
+  "automatic_promotion": false,
+  "capital_dollars": 10000,
+  "risk": {
+    "per_contract_dollars": 500,
+    "per_combo_dollars": 500,
+    "per_fixture_dollars": 1000,
+    "maximum_committed_dollars": 10000,
+    "maximum_ticket_gross_liability_dollars": 250,
+    "cash_collateral_credit": false
+  },
+  "quote_policy": {
+    "minimum_net_edge_per_share": 0.003,
+    "edge_unit": "dollars_per_combo_contract",
+    "basis": "point",
+    "dynamic_edge": false,
+    "correlation_charge": "enabled_when_available"
+  },
+  "fair_model": {
+    "model": "liquidity_weighted_kalshi_polymarket_pinnacle",
+    "depth_proxy": "sqrt(two_sided_top_book_payout_dollars)",
+    "spread_proxy": "fee_expanded_interval_width",
+    "polymarket_score_multiplier": 1.5,
+    "pinnacle_score_multiplier": 0.5,
+    "pinnacle_weight_cap": 0.2,
+    "maximum_venue_weight": 0.6,
+    "pinnacle_delay_seconds": 30,
+    "exchange_max_age_seconds": 15,
+    "pinnacle_max_age_seconds": 90
+  },
+  "scope": {
+    "sports": [
+      "MLB",
+      "NFL"
+    ],
+    "pregame_only": true,
+    "cutoff_seconds": 60,
+    "legs": [
+      2,
+      4
+    ],
+    "distinct_fixtures": true,
+    "full_game": true,
+    "player_props": false,
+    "supported_markets": [
+      "moneyline",
+      "spread",
+      "total",
+      "team_total"
+    ]
+  },
+  "execution": {
+    "mode": "shadow",
+    "last_look_max_fair_move_cents": 1.0,
+    "quote_lifetime_seconds": 3,
+    "markouts_seconds": [
+      5,
+      30,
+      120
+    ],
+    "fill_edge_logging": true,
+    "settlement_cohort_logging": true
+  },
+  "creator_policy": {
+    "blacklist_mode": "log_and_review",
+    "automatic_sanctions": false
+  },
+  "evidence": {
+    "development_and_holdout": [
+      "research/MLB_AUGUST_HELDOUT_RESULTS_20260909.md",
+      "research/NFL_FIRST_PASS_MODEL_DECISION_20260909.md"
+    ],
+    "source_hashes": {
+      "config/runtime_nfl_locked_shadow.json": "02e2d9cc404b4f9916a5c17a54581da39c7b93ff488d87894aa2ec62023eaf3d",
+      "config/weighting.json": "15f84c96b0c2f4b4af8b474e58f9147dcff88c957e516485d216ddce0f83e0f8",
+      "config/oddspapi_polling.json": "cab2d89a543f1dd672ccf908f53c69ca152e16b4b56be18ef432ed3c092f0115",
+      "src/combos/shadow_engine.py": "1b5f0379586eb645af5e0f5d498659252803e6183c72ebd59699a63a0b2df072",
+      "src/combos/pricing_service.py": "4ba73d687e721ca38b53a219992f004cd86a2f6b079c477eb8ca1eaaffa7eafa",
+      "src/combos/weighted_fair.py": "1856ac648f2e973bd06e24ca981445cd756df738b1bb378b513e8e0010f3fa36",
+      "src/combos/risk.py": "3ede2c25e0f2c902efad7983e312d4eee8a747b531aa797d0b8829bd3410e9e6",
+      "scripts/shadow_fill_edge_report.py": "be9c4279efa22c44cd01ca4a9691a2f2af16719ae5e2aebeb73a54621b788120",
+      "research/SHADOW_FILL_EDGE_CALIBRATION_20260910.md": "8ce7acfa0dfcbc76af447588f09519a407e4aa44601f172ca09045b084bf1fbc"
+    },
+    "pinnacle_historical_validation": "unavailable_or_unverified",
+    "acceptance_and_fill_validation": "pending"
+  },
+  "promotion_gates": [
+    "fresh_positive_atomic_account_cash",
+    "complete_reviewed_pinnacle_payoff_and_limit_currency_mappings",
+    "current_fee_terms",
+    "three_source_active_intersection",
+    "creator_blacklist_review",
+    "confirmed_fill_edge_and_markout_sample",
+    "settlement_reconciliation",
+    "OOS_validation_without_target_reselection"
+  ],
+  "created_at": 1788962702.3065689
+}

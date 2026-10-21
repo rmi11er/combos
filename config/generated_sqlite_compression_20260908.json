@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "scope": "Only the four closed generated databases; no raw capture or sniffer data. Exact bytes/paths retained. No VACUUM or journal mutation.",
+  "databases": [
+    {
+      "path": "runs/mlb_longitudinal_disk_20260907/input.sqlite",
+      "file_sha256": "972311a35b2df1618c0aa150bf08fc59845b32eb5c56ceba009094f393c848ce",
+      "logical_bytes": 492302336,
+      "completion_evidence": [
+        {
+          "path": "runs/mlb_longitudinal_disk_20260907/complete.json",
+          "sha256": "9bea5f10571e85a51ef8d56bc14ca07ec259862bf7fd728fa7f7d346fbd574f2",
+          "expected_fields": {
+            "records": 48,
+            "plots": true
+          }
+        },
+        {
+          "path": "runs/mlb_longitudinal_disk_20260907/parity.json",
+          "sha256": "1bd0ccd2e15073e567c34dede2ce896fdc4948360163fc364d332cad761bac83",
+          "expected_fields": {
+            "decoded_exact": true
+          }
+        },
+        {
+          "path": "runs/mlb_longitudinal_disk_20260907/index_parity.json",
+          "sha256": "e19ce018573a809e9e0652d1120151e9c2c6e4eb587aad9069a58c8511dca29b"
+        }
+      ]
+    },
+    {
+      "path": "runs/mlb_longitudinal_streaming_verified_20260907/input.sqlite",
+      "file_sha256": "1c0810ed34e63d3b32a00067024006fa6506d535e0aa529f4303da4ee063ee70",
+      "logical_bytes": 492277760,
+      "completion_evidence": [
+        {
+          "path": "runs/mlb_longitudinal_streaming_verified_20260907/snapshot_complete.json",
+          "sha256": "c71a863ba350f0efca28a5e91ea3245e94b7494582113552cb587aa5f61cf569",
+          "expected_fields": {
+            "records": 48
+          }
+        },
+        {
+          "path": "runs/mlb_longitudinal_streaming_verified_20260907/parity.json",
+          "sha256": "3f124acb0c7fbf610f99a23ee26812a18e95c52e44f98a2e19a4d209586731ad",
+          "expected_fields": {
+            "decoded_exact": true
+          }
+        }
+      ]
+    },
+    {
+      "path": "runs/cfb_performance_audit_20260907/market_benchmark/native_metadata.sqlite",
+      "file_sha256": "60945e2bb48a17272ba68693017bcfe983d229d2289aaf25e6403d041cf06527",
+      "logical_bytes": 1157177344,
+      "completion_evidence": [
+        {
+          "path": "runs/cfb_performance_audit_20260907/market_benchmark/summary.json",
+          "sha256": "7df7058fdb28cf950d29f38b3c04a0581400058897ac24b3eebfa12703df7258",
+          "expected_fields": {
+            "benchmark_prints": 298747,
+            "finished_at": "2026-09-07T16:50:07.788887-05:00"
+          }
+        },
+        {
+          "path": "runs/cfb_performance_audit_20260907/market_benchmark/manifest.json",
+          "sha256": "409130af2f8be7719e034bbaf731818f011c34bf39b4e0979fc0ff62e8ec05c1"
+        }
+      ]
+    },
+    {
+      "path": "runs/mlb_historical_20260907/cohort/metadata_index.sqlite",
+      "file_sha256": "e15ee4b6c6f6f8687b92af232c9d5794935fa7b379b2b942b7c3761f5acbbb02",
+      "logical_bytes": 787787776,
+      "completion_evidence": [
+        {
+          "path": "runs/mlb_historical_20260907/cohort/summary.json",
+          "sha256": "b3f82f42ec5dcecc2898c247ff2351283ec9ac9089382662ac97602ec5888614",
+          "expected_fields": {
+            "pure_mlb_prints": 318536,
+            "pure_mlb_definitions": 159450
+          }
+        }
+      ]
+    }
+  ]
+}

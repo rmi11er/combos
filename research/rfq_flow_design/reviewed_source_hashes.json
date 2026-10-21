@@ -1,0 +1,18 @@
+{
+  "review_date": "2026-09-07",
+  "purpose": "Source hashes at design verification; not a deployment freeze. Other agents may continue editing.",
+  "files": {
+    "src/combos/live_collectors.py": "362cfa770181fc1db55fe4eaf1d453c9edc5a36cefe2656e9bf71c716968358b",
+    "src/combos/event_store.py": "38d3537503c7c010c326a567ed28b88cee9271687fd5a7cd3aabe6bced00fdb4",
+    "src/combos/creator_service.py": "e35ee9b78bd68ae0440df4b3250cbbff8fca096320e34b7e8ec1c073d230f5d4",
+    "src/combos/shadow_engine.py": "239415eb8047a2a2c0b341d709814656954235d0df9b330f2def499a178583fa",
+    "src/combos/pricing_service.py": "60c6532101dec6cbbc9328be2602f9ca6a884277cb899819da65b1a11f06ad02",
+    "src/combos/joint_pricing.py": "6aa0a892dc2cce5009acdaf2732de559dcdd8b5efa3717bc0c91ca32a23c3027",
+    "src/combos/rfq_scope.py": "c8eb534e54d503bf25a8059ec7f9d2910577bdd8d92c3e3450e9e4ae7d5ce539",
+    "src/combos/shadow.py": "a03f05858b2ae0104230cd78ae613a221f9ea65a1376972b32e5de4955c9b53a",
+    "src/combos/journal.py": "bbb31195c2ab3e4563b9d411b868b6b15ae28b19f6417113fd6477d34018174d",
+    "src/combos/live_books.py": "66be9bc6ce974207aad54fc9d32653f2f4188b9896ff83733bf3a9021957378f",
+    "src/combos/creators.py": "c4e8750f0a792be942ee2baaee170a5903ee958be8ff7839859c37ad80599ca8",
+    "src/combos/creator_profile.py": "cc4858450c7170de327b3d0dfaafad1599cfe4f3298102402e8cd883b14ff1f6"
+  }
+}

@@ -1,0 +1,2 @@
+[console_scripts]
+combos-runtime = combos.cli:main

@@ -1,0 +1,23 @@
+{
+  "depth_exponent": 0.5,
+  "spread_floor_cents": 1.0,
+  "maximum_venue_weight": 0.6,
+  "pregame_half_life_seconds": 60.0,
+  "in_play_half_life_seconds": 5.0,
+  "pregame_max_age_seconds": 120.0,
+  "in_play_max_age_seconds": 15.0,
+  "delayed_pinnacle": true,
+  "pinnacle_delay_seconds": 30.0,
+  "pinnacle_max_age_seconds": 90.0,
+  "exchange_max_age_seconds": 15.0,
+  "pregame_cutoff_seconds": 60.0,
+  "polymarket_score_multiplier": 1.5,
+  "pinnacle_score_multiplier": 1.5,
+  "pinnacle_weight_cap": 0.6,
+  "disagreement_soft_cents": 2.0,
+  "disagreement_hard_cents": 5.0,
+  "delayed_padding_cents": 0.5,
+  "disagreement_padding_multiplier": 1.0,
+  "disagreement_pinnacle_score_multiplier": 0.25,
+  "disagreement_risk_multiplier": 0.5
+}

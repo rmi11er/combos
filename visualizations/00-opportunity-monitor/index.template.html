@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liquidity opportunity monitor</title>
+  <style>
+    :root { --bg:#0b0f14; --surface:#121922; --surface-2:#18222d; --text:#e8eef4; --muted:#91a1b2; --line:#273646; --cyan:#55d6be; --blue:#70a7ff; --orange:#f3a35c; --purple:#b59bff; --red:#ff7188; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:radial-gradient(circle at 18% 0%,#172735 0,#0b0f14 42%); color:var(--text); font:14px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { max-width:1440px; margin:auto; padding:34px 32px 56px; }
+    h1,h2,h3,p { margin:0; } h1 { font-size:31px; letter-spacing:-.04em; font-weight:600; } h2 { font-size:17px; font-weight:600; } h3 { font-size:13px; color:var(--muted); font-weight:500; text-transform:uppercase; letter-spacing:.1em; }
+    .eyebrow { color:var(--cyan); text-transform:uppercase; font-weight:600; letter-spacing:.14em; font-size:11px; margin-bottom:9px; }
+    .sub { max-width:800px; color:var(--muted); margin-top:8px; }
+    .topline { display:flex; justify-content:space-between; align-items:flex-start; gap:24px; }
+    .status { color:#9fe8bc; font-size:12px; border:1px solid #275542; padding:8px 11px; border-radius:99px; white-space:nowrap; }
+    .controls { display:flex; flex-wrap:wrap; gap:10px; margin:27px 0 22px; padding:14px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+    label { color:var(--muted); font-size:12px; display:flex; align-items:center; gap:7px; }
+    select,button { color:var(--text); background:var(--surface-2); border:1px solid var(--line); border-radius:7px; padding:8px 10px; font:inherit; }
+    button { cursor:pointer; } button[aria-pressed="true"] { color:#071413; background:var(--cyan); border-color:var(--cyan); font-weight:600; }
+    .seg { display:flex; gap:5px; } .seg button { padding:7px 10px; }
+    .grid { display:grid; gap:14px; } .stats { grid-template-columns:repeat(4,minmax(0,1fr)); margin-bottom:18px; }
+    .stat,.panel { background:linear-gradient(180deg,rgba(24,34,45,.92),rgba(18,25,34,.92)); border:1px solid var(--line); border-radius:12px; }
+    .stat { padding:17px 18px; } .stat .label { color:var(--muted); font-size:12px; } .stat .value { font-size:26px; margin-top:8px; letter-spacing:-.03em; } .stat .context { color:var(--muted); font-size:12px; margin-top:5px; }
+    .main-grid { grid-template-columns:minmax(0,1.7fr) minmax(280px,.8fr); align-items:start; } .panel { padding:20px; } .panel-head { display:flex; justify-content:space-between; gap:16px; align-items:baseline; margin-bottom:16px; } .panel-head small { color:var(--muted); }
+    .decision-grid { grid-template-columns:minmax(0,1.05fr) minmax(0,1.35fr); margin:20px 0 18px; } .decision-grid.bottom { grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr); margin-top:18px; }
+    .funnel { display:grid; gap:10px; } .funnel-row { display:grid; grid-template-columns:130px 1fr 70px; gap:10px; align-items:center; font-size:12px; } .funnel-track { height:10px; background:#243441; border-radius:10px; overflow:hidden; } .funnel-track i { display:block; height:100%; background:linear-gradient(90deg,var(--cyan),var(--blue)); border-radius:10px; } .funnel-num { text-align:right; font-variant-numeric:tabular-nums; }
+    .subtle { color:var(--muted); font-size:12px; } .tag { display:inline-block; padding:3px 7px; border:1px solid var(--line); border-radius:99px; color:var(--muted); font-size:11px; margin-left:6px; }
+    .priority { display:grid; gap:9px; } .priority-row { display:grid; grid-template-columns:120px 1fr 72px; gap:10px; align-items:center; font-size:12px; } .priority-row .track { height:6px; background:#243441; border-radius:8px; overflow:hidden; } .priority-row i { display:block; height:100%; background:var(--orange); } .priority-row b { text-align:right; font-weight:500; }
+    .micro-table { width:100%; } .micro-table th,.micro-table td { padding:8px 5px; font-size:11px; } .positive { color:#9fe8bc; } .negative { color:var(--red); } .center { text-align:center; }
+    .chart-wrap { min-height:300px; } svg { width:100%; height:300px; display:block; overflow:visible; } .axis { stroke:var(--line); stroke-width:1; } .gridline { stroke:#1c2936; stroke-width:1; } .axis-text { fill:var(--muted); font-size:11px; } .bar { opacity:.94; }
+    .legend { display:flex; flex-wrap:wrap; gap:9px 15px; margin-top:8px; color:var(--muted); font-size:12px; } .legend span { display:inline-flex; align-items:center; gap:6px; } .swatch { width:9px; height:9px; border-radius:2px; display:inline-block; }
+    .callout { padding:13px 14px; border-left:2px solid var(--cyan); background:#10211f; color:#c8ddd9; margin-bottom:18px; font-size:13px; }
+    .rank { display:grid; gap:11px; } .rank-row { display:grid; grid-template-columns:minmax(0,1fr) 95px; gap:12px; align-items:center; } .rank-name { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; } .rank-bar { height:5px; background:#263543; border-radius:9px; margin-top:5px; overflow:hidden; } .rank-bar i { display:block; height:100%; background:var(--cyan); border-radius:9px; } .rank-val { text-align:right; color:var(--text); font-variant-numeric:tabular-nums; }
+    .table-panel { margin-top:18px; } table { width:100%; border-collapse:collapse; } th,td { text-align:left; padding:11px 8px; border-bottom:1px solid #21303d; font-size:12px; } th { color:var(--muted); font-weight:500; } td.num { text-align:right; font-variant-numeric:tabular-nums; } tbody tr:hover { background:#18222d; }
+    .notes { color:var(--muted); font-size:12px; display:grid; gap:7px; margin-top:18px; } .notes div::before { content:"·"; color:var(--cyan); margin-right:8px; } .source { color:var(--muted); font-size:11px; margin-top:14px; }
+    @media (max-width:900px) { .stats { grid-template-columns:repeat(2,minmax(0,1fr)); } .main-grid { grid-template-columns:1fr; } }
+    @media (max-width:560px) { main { padding:24px 16px 40px; } .topline { display:block; } .status { display:inline-block; margin-top:14px; } .stats { grid-template-columns:1fr 1fr; gap:9px; } .stat { padding:13px; } .stat .value { font-size:21px; } .controls { align-items:stretch; } label { width:100%; justify-content:space-between; } select { min-width:150px; } }
+  </style>
+</head>
+<body>
+<main>
+  <div class="topline">
+    <div><div class="eyebrow">Daily research allocation · liquidity network</div><h1>Where should the next cycle go?</h1><p class="sub">Start with the executable funnel, adverse-selection evidence, capacity frontier, and data blockers. Use market volume below as context—not as a trading opportunity estimate.</p></div>
+    <div class="status" id="status">snapshot loaded</div>
+  </div>
+  <div class="controls">
+    <label>Cadence <span class="seg"><button data-horizon="day" aria-pressed="true">Daily</button><button data-horizon="week" aria-pressed="false">Weekly</button><button data-horizon="month" aria-pressed="false">Monthly</button></span></label>
+    <label>Measure <select id="metric"><option value="premium">YES premium</option><option value="payout">Payout notional</option><option value="prints">Print count</option><option value="known_pnl">Known P&amp;L</option><option value="active_markets">Active catalog rows</option></select></label>
+    <label>Venue <select id="venue"><option value="all">All venues</option></select></label>
+    <label>Geography <select id="geography"><option value="all">US + non-US</option><option>US</option><option>non-US</option></select></label>
+    <label>Market type <select id="market_type"><option value="all">Combo + sports</option><option>combo</option><option>sports</option></select></label>
+    <label>Feature cut <select id="dimension"><option value="sport">Sport</option><option value="venue">Venue</option><option value="geography">Geography</option><option value="market_type">Market type</option><option value="scope">Research scope</option><option value="sampling">Sampling</option></select></label>
+  </div>
+  <section class="grid decision-grid">
+    <div class="panel"><div class="panel-head"><div><h2>Executable funnel</h2><small>latest three-source RFQ scenario run</small></div><span class="tag" id="funnel-source">—</span></div><div class="funnel" id="funnel"></div><div class="source" id="funnel-note">Counts are scope diagnostics, not fill probabilities.</div></div>
+    <div class="panel"><div class="panel-head"><div><h2>Adverse-selection curve</h2><small>same-window markouts; cents of adverse move</small></div><span class="tag" id="markout-meta">—</span></div><div class="chart-wrap"><svg id="markout-chart" viewBox="0 0 700 270" role="img" aria-label="Markout curve by horizon"></svg></div><div class="legend" id="markout-legend"></div></div>
+  </section>
+  <section class="grid decision-grid bottom">
+    <div class="panel"><div class="panel-head"><div><h2>Capacity frontier</h2><small>admitted scenarios vs. committed dollars</small></div><span class="tag">0.3¢ combo charge</span></div><div class="chart-wrap"><svg id="capacity-chart" viewBox="0 0 760 270" role="img" aria-label="Capacity frontier"></svg></div><div class="legend" id="capacity-legend"></div></div>
+    <div class="panel"><div class="panel-head"><div><h2>What is blocking scale?</h2><small>research backlog signals</small></div></div><div class="priority" id="priority"></div><div class="source" id="priority-note">High counts can overlap; they are prioritization signals, not independent observations.</div></div>
+  </section>
+  <section class="grid stats"><div class="stat"><div class="label" id="stat1-label">Selected-window total</div><div class="value" id="stat1">—</div><div class="context" id="stat1-context">filtered snapshot</div></div><div class="stat"><div class="label">Average per period</div><div class="value" id="stat2">—</div><div class="context" id="stat2-context">based on selected cadence</div></div><div class="stat"><div class="label">Distinct active cuts</div><div class="value" id="stat3">—</div><div class="context" id="stat3-context">feature dimension</div></div><div class="stat"><div class="label">Coverage signal</div><div class="value" id="stat4">—</div><div class="context" id="stat4-context">source and sampling mix</div></div></section>
+  <section class="grid main-grid">
+    <div class="panel"><div class="panel-head"><div><h2>Observed activity context</h2><small id="chart-subtitle">stacked by sport</small></div><small id="chart-range">—</small></div><div class="chart-wrap"><svg id="chart" viewBox="0 0 900 300" role="img" aria-label="Activity over time"></svg></div><div class="legend" id="legend"></div></div>
+    <div class="panel"><div class="panel-head"><div><h2>Activity mix</h2><small>ranked feature cut</small></div></div><div class="callout" id="callout">—</div><div class="rank" id="rank"></div></div>
+  </section>
+  <section class="panel table-panel"><div class="panel-head"><div><h2>Segment monitor</h2><small>sorted by selected measure; use this to decide where to deepen collection or pricing work</small></div><small id="table-count">—</small></div><table><thead><tr><th>Segment</th><th>Venue</th><th>Geography</th><th>Market</th><th>Sampling</th><th class="num">Periods</th><th class="num">Total</th><th class="num">Share</th></tr></thead><tbody id="table-body"></tbody></table></section>
+  <div class="notes" id="notes"></div><div class="source" id="source"></div>
+</main>
+<script>
+const SNAPSHOT = __SNAPSHOT__;
+const state = { horizon: 'day', metric: 'premium', venue: 'all', geography: 'all', market_type: 'all', dimension: 'sport' };
+const colors = ['#55d6be','#70a7ff','#f3a35c','#b59bff','#ff7188','#c4d475','#db8ce1'];
+const $ = (id) => document.getElementById(id);
+const rowsForMetric = () => SNAPSHOT.observations.filter(r => r.metric === state.metric && (state.venue === 'all' || r.venue === state.venue) && (state.geography === 'all' || r.geography === state.geography) && (state.market_type === 'all' || r.market_type === state.market_type));
+const periodKey = (date) => { const d = new Date(date + 'T12:00:00Z'); if (state.horizon === 'day') return date; if (state.horizon === 'month') return date.slice(0,7); const day = d.getUTCDay() || 7; d.setUTCDate(d.getUTCDate() - day + 1); return d.toISOString().slice(0,10); };
+const fmt = (v) => { if (!Number.isFinite(v)) return '—'; const abs=Math.abs(v); const sign=v<0?'-':''; if (state.metric==='prints'||state.metric==='active_markets') return sign+Math.round(abs).toLocaleString(); if(abs>=1e9) return sign+'$'+(abs/1e9).toFixed(2)+'B'; if(abs>=1e6) return sign+'$'+(abs/1e6).toFixed(2)+'M'; if(abs>=1e3) return sign+'$'+(abs/1e3).toFixed(1)+'K'; return sign+'$'+abs.toFixed(0); };
+const pct = (v) => (v*100).toFixed(1)+'%';
+const esc = (s) => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function aggregate(rows) { const periods=[...new Set(rows.map(r=>periodKey(r.date)))].sort(); const keys=[...new Set(rows.map(r=>r[state.dimension] || 'unknown'))].sort(); const by=new Map(); rows.forEach(r=>{const p=periodKey(r.date), k=r[state.dimension]||'unknown'; if(!by.has(p))by.set(p,{}); by.get(p)[k]=(by.get(p)[k]||0)+Number(r.value||0);}); return {periods,keys,by}; }
+function renderStats(rows, agg) { const total=rows.reduce((s,r)=>s+Number(r.value||0),0), n=agg.periods.length, cuts=new Set(rows.map(r=>r[state.dimension]||'unknown')).size; const sampled=rows.filter(r=>r.sampling!=='census').length, pctMeasured=rows.length?1-sampled/rows.length:0; $('stat1').textContent=fmt(total); $('stat2').textContent=fmt(n?total/n:0); $('stat3').textContent=cuts; $('stat4').textContent=rows.length ? Math.round(pctMeasured*100)+'% measured' : '—'; $('stat1-label').textContent=state.horizon[0].toUpperCase()+state.horizon.slice(1)+' total'; $('stat1-context').textContent=state.metric==='known_pnl'?'research outcome, not liquidity':'filtered snapshot'; $('stat2-context').textContent=n+' '+state.horizon+' period'+(n===1?'':'s'); $('stat3-context').textContent=state.dimension+' dimension'; $('stat4-context').textContent=sampled?'non-census observations included':'census-only rows'; }
+function lineChart(id, series, xLabels, yLabel, colorsForLines) { const svg=$(id), W=id==='markout-chart'?700:760,H=270,L=52,R=18,T=18,B=38,iw=W-L-R,ih=H-T-B; const vals=series.flatMap(s=>s.values); const max=Math.max(.0001,...vals.map(v=>Math.abs(v))); let html=''; [0,.25,.5,.75,1].forEach(t=>{const y=T+ih*(1-t);html+=`<line class="gridline" x1="${L}" x2="${W-R}" y1="${y}" y2="${y}"/><text class="axis-text" x="${L-8}" y="${y+4}" text-anchor="end">${(max*t).toFixed(3)}</text>`;}); const x=(i)=>L+(xLabels.length===1?.5:i/(xLabels.length-1))*iw; series.forEach((s,si)=>{const points=s.values.map((v,i)=>`${x(i)},${T+ih*(1-v/max)}`).join(' ');html+=`<polyline fill="none" stroke="${colorsForLines[si%colorsForLines.length]}" stroke-width="2.5" points="${points}"/>`;s.values.forEach((v,i)=>{html+=`<circle cx="${x(i)}" cy="${T+ih*(1-v/max)}" r="4" fill="${colorsForLines[si%colorsForLines.length]}"><title>${esc(s.name)} · ${esc(xLabels[i])}: ${v.toFixed(4)}</title></circle>`;});}); xLabels.forEach((label,i)=>{html+=`<text class="axis-text" x="${x(i)}" y="${H-14}" text-anchor="middle">${esc(label)}</text>`;});html+=`<line class="axis" x1="${L}" x2="${W-R}" y1="${T+ih}" y2="${T+ih}"/>`;svg.innerHTML=html;}
+function renderResearch() {
+  const r = SNAPSHOT.research || {};
+  const funnel = r.funnel;
+  if (funnel) {
+    const first = funnel.steps[0] || {value: 1};
+    const max = first.value || 1;
+    const last = funnel.steps[funnel.steps.length - 1] || {value: 0};
+    $('funnel-source').textContent = funnel.source.split('/').slice(-2).join('/');
+    $('funnel').innerHTML = funnel.steps.map(s => '<div class="funnel-row"><span>' + esc(s.label) + '</span><div class="funnel-track"><i style="width:' + Math.max(1, s.value / max * 100) + '%"></i></div><span class="funnel-num">' + Number(s.value).toLocaleString() + '</span></div>').join('');
+    $('funnel-note').textContent = funnel.exclusions.length + ' exclusion/review buckets are retained; scenario-priced share is ' + pct(last.value / max) + ' of observed RFQs.';
+  } else {
+    $('funnel').innerHTML = '<div class="subtle">No funnel artifact found.</div>';
+  }
+  const mo = r.markouts;
+  if (mo) {
+    const groups = mo.groups || [];
+    const horizons = [...new Set(groups.map(g => g.horizon_seconds))].sort((a,b) => a-b);
+    const buckets = [...new Set(groups.map(g => g.bucket))];
+    const series = buckets.map(bucket => ({name: bucket, values: horizons.map(h => { const g = groups.find(x => x.bucket === bucket && x.horizon_seconds === h); return g ? g.mean_adverse_move_cents : 0; })}));
+    lineChart('markout-chart', series, horizons.map(h => h + 's'), 'cents', ['#55d6be','#f3a35c','#70a7ff']);
+    $('markout-legend').innerHTML = series.map((s,i) => '<span><i class="swatch" style="background:' + ['#55d6be','#f3a35c','#70a7ff'][i%3] + '"></i>' + esc(s.name) + '</span>').join('');
+    $('markout-meta').textContent = mo.total_labels + ' labels';
+  } else {
+    $('markout-meta').textContent = 'no markouts';
+  }
+  const cap = (r.capacity && r.capacity.scenarios || []).filter(s => s.charge === '0.3c_combo');
+  const caps = [...new Set(cap.map(s => s.cap))].sort((a,b) => a-b);
+  const modes = [...new Set(cap.map(s => s.mode))];
+  const capSeries = modes.map(mode => ({name: mode === 'unfilled_expiry_3s' ? 'expiry / release' : 'fill / no release', values: caps.map(c => { const s = cap.find(x => x.cap === c && x.mode === mode); return s ? s.counts.admitted : 0; })}));
+  lineChart('capacity-chart', capSeries, caps.map(c => '$' + c), 'admitted', ['#70a7ff','#ff7188']);
+  $('capacity-legend').innerHTML = capSeries.map((s,i) => '<span><i class="swatch" style="background:' + ['#70a7ff','#ff7188'][i] + '"></i>' + esc(s.name) + '</span>').join('');
+  const blockers = [];
+  const b = r.blockers || {};
+  Object.entries((b.markout_missing && b.markout_missing.label_reason_counts) || {}).forEach(([k,v]) => blockers.push([k,v]));
+  const topMissing = ((b.coverage && b.coverage.top_pm_missing_keys) || []).slice(0,4).reduce((s,x) => s + x[1], 0);
+  if (topMissing) blockers.push(['top missing PM keys', topMissing]);
+  blockers.sort((a,b) => b[1] - a[1]);
+  const top = Math.max(1, ...blockers.map(x => x[1]));
+  $('priority').innerHTML = blockers.slice(0,6).map(([k,v]) => '<div class="priority-row"><span>' + esc(k.replaceAll('_',' ')) + '</span><div class="track"><i style="width:' + v / top * 100 + '%"></i></div><b>' + Number(v).toLocaleString() + '</b></div>').join('') || '<div class="subtle">No blocker diagnostics found.</div>';
+}
+function renderChart(agg) { const svg=$('chart'), W=900,H=300,L=52,R=15,T=16,B=42, iw=W-L-R, ih=H-T-B; const max=Math.max(1,...agg.periods.map(p=>Object.values(agg.by.get(p)||{}).reduce((a,b)=>a+b,0))); let html=''; [0,.25,.5,.75,1].forEach(t=>{const y=T+ih*(1-t); html+=`<line class="gridline" x1="${L}" x2="${W-R}" y1="${y}" y2="${y}"/><text class="axis-text" x="${L-8}" y="${y+4}" text-anchor="end">${fmt(max*t)}</text>`;}); const bw=Math.max(3,Math.min(54,iw/Math.max(1,agg.periods.length)*.68)); agg.periods.forEach((p,i)=>{const x=L+(i+.5)*iw/Math.max(1,agg.periods.length)-bw/2; let y=T+ih; agg.keys.forEach((k,j)=>{const v=(agg.by.get(p)||{})[k]||0; const h=ih*v/max; y-=h; if(h>0)html+=`<rect class="bar" x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${h.toFixed(1)}" fill="${colors[j%colors.length]}" rx="2"><title>${esc(p)} · ${esc(k)}: ${fmt(v)}</title></rect>`;}); const label=state.horizon==='month'?p:p.slice(5); if(agg.periods.length<=18 || i%Math.ceil(agg.periods.length/12)===0)html+=`<text class="axis-text" x="${x+bw/2}" y="${H-16}" text-anchor="middle">${label}</text>`; }); html+=`<line class="axis" x1="${L}" x2="${W-R}" y1="${T+ih}" y2="${T+ih}"/>`; svg.innerHTML=html; $('legend').innerHTML=agg.keys.map((k,i)=>`<span><i class="swatch" style="background:${colors[i%colors.length]}"></i>${esc(k)}</span>`).join(''); $('chart-subtitle').textContent='stacked by '+state.dimension; $('chart-range').textContent=agg.periods.length ? agg.periods[0]+' → '+agg.periods[agg.periods.length-1] : 'no rows'; }
+function renderRank(rows) { const totals={}; rows.forEach(r=>{const k=r[state.dimension]||'unknown';totals[k]=(totals[k]||0)+Number(r.value||0);}); const sorted=Object.entries(totals).sort((a,b)=>b[1]-a[1]); const max=sorted[0]?.[1]||1; $('rank').innerHTML=sorted.slice(0,8).map(([k,v])=>`<div class="rank-row"><div><div class="rank-name">${esc(k)}</div><div class="rank-bar"><i style="width:${Math.max(2,v/max*100)}%"></i></div></div><div class="rank-val">${fmt(v)}</div></div>`).join('') || '<div class="source">No observations match these filters.</div>'; const top=sorted[0]; $('callout').textContent=top ? `${top[0]} is the largest visible ${state.dimension} cut at ${fmt(top[1])}. Treat this as a collection-priority signal, not an executable capacity estimate.` : 'No visible opportunity under the current filters.'; }
+function renderTable(rows) { const groups=new Map(); rows.forEach(r=>{const k=[r[state.dimension]||'unknown',r.venue,r.geography,r.market_type,r.sampling].join('|'); if(!groups.has(k))groups.set(k,{segment:r[state.dimension]||'unknown',venue:r.venue,geography:r.geography,market:r.market_type,sampling:r.sampling,periods:new Set(),value:0}); const g=groups.get(k);g.periods.add(periodKey(r.date));g.value+=Number(r.value||0);}); const all=[...groups.values()].sort((a,b)=>b.value-a.value), total=all.reduce((s,g)=>s+g.value,0); $('table-count').textContent=all.length+' segments'; $('table-body').innerHTML=all.slice(0,20).map(g=>`<tr><td>${esc(g.segment)}</td><td>${esc(g.venue)}</td><td>${esc(g.geography)}</td><td>${esc(g.market)}</td><td>${esc(g.sampling)}</td><td class="num">${g.periods.size}</td><td class="num">${fmt(g.value)}</td><td class="num">${total?pct(g.value/total):'—'}</td></tr>`).join('') || '<tr><td colspan="8">No observations match these filters.</td></tr>'; }
+function render() { const rows=rowsForMetric(), agg=aggregate(rows); renderStats(rows,agg); renderChart(agg); renderRank(rows); renderTable(rows); renderResearch(); $('notes').innerHTML=SNAPSHOT.notes.map(n=>`<div>${esc(n)}</div>`).join(''); $('source').textContent='Sources: '+SNAPSHOT.sources.map(s=>s.name+' — '+s.coverage).join(' · ')+' · generated '+SNAPSHOT.generated_at.slice(0,16).replace('T',' ')+ ' UTC'; }
+document.querySelectorAll('[data-horizon]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-horizon]').forEach(x=>x.setAttribute('aria-pressed','false'));b.setAttribute('aria-pressed','true');state.horizon=b.dataset.horizon;render();}));
+['metric','venue','geography','market_type','dimension'].forEach(id=>$(id).addEventListener('change',e=>{state[id]=e.target.value;render();}));
+const venues=[...new Set(SNAPSHOT.observations.map(r=>r.venue))].sort(); $('venue').innerHTML='<option value="all">All venues</option>'+venues.map(v=>`<option>${esc(v)}</option>`).join(''); $('status').textContent='as of '+SNAPSHOT.generated_at.slice(0,10)+' · '+SNAPSHOT.observations.length+' rows'; render();
+</script>
+</body>
+</html>

@@ -1,0 +1,2543 @@
+{
+  "season": 2026,
+  "week": 1,
+  "fixtures": 16,
+  "kalshi_in_week": {
+    "moneyline": 32,
+    "spreads": 404,
+    "totals": 304
+  },
+  "matched": {
+    "moneyline": 32,
+    "spreads": 81,
+    "totals": 186
+  },
+  "unmatched": [
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP17DETBUF-BUF",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP17DETBUF-DET",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20CARATL-ATL",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20CARATL-CAR",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20CINHOU-CIN",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20CINHOU-HOU",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20CLETB-CLE",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20CLETB-TB",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20GBNYJ-GB",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20GBNYJ-NYJ",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20INDKC-IND",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20INDKC-KC",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20JACDEN-DEN",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20JACDEN-JAC",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20LVLAC-LAC",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20LVLAC-LV",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20MIASF-MIA",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20MIASF-SF",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20MINCHI-CHI",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20MINCHI-MIN",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20NOBAL-BAL",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20NOBAL-NO",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20PHITEN-PHI",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20PHITEN-TEN",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20PITNE-NE",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20PITNE-PIT",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20SEAARI-ARI",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20SEAARI-SEA",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20WASDAL-DAL",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP20WASDAL-WAS",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP21NYGLAR-LAR",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLGAME-26SEP21NYGLAR-NYG",
+      "market_type": "moneyline",
+      "reason": "outside_requested_week_or_fixture_unmatched"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-NE10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-NE11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-NE14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-NE15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-NE2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-NE3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-NE4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-NE5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-NE6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-NE7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-NE8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-SEA10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-SEA11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-SEA14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-SEA15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-SEA17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-SEA18",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-SEA21",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-SEA6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP09NESEA-SEA8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-LAR10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-LAR11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-LAR14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-LAR15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-LAR17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-LAR18",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-LAR21",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-LAR6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-LAR8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-SF10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-SF11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-SF14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-SF15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-SF2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-SF3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-SF4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-SF5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-SF6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-SF7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP10SFLAR-SF8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-ARI10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-ARI11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-ARI2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-ARI3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-ARI4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-ARI5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-ARI6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-ARI7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-ARI8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-LAC10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-LAC14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-LAC17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-LAC18",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-LAC2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-LAC21",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-LAC24",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-LAC28",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-LAC3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-LAC31",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-LAC4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-LAC5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ARILAC-LAC6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-ATL10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-ATL11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-ATL14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-ATL15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-ATL2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-ATL3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-ATL4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-ATL5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-ATL6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-ATL7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-ATL8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-PIT10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-PIT11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-PIT14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-PIT15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-PIT17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-PIT18",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-PIT21",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-PIT6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13ATLPIT-PIT8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-BAL10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-BAL11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-BAL14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-BAL15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-BAL17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-BAL18",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-BAL21",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-BAL6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-BAL8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-IND10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-IND11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-IND14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-IND15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-IND2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-IND3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-IND4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-IND5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-IND6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-IND7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BALIND-IND8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-BUF10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-BUF11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-BUF14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-BUF15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-BUF17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-BUF6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-BUF7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-BUF8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-HOU10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-HOU11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-HOU14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-HOU15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-HOU17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-HOU2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-HOU3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-HOU4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-HOU5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-HOU6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-HOU7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13BUFHOU-HOU8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CAR10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CAR11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CAR14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CAR15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CAR2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CAR3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CAR4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CAR5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CAR6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CAR7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CAR8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CHI10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CHI11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CHI14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CHI15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CHI17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CHI18",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CHI21",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CHI6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CHI7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CHICAR-CHI8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-CLE10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-CLE11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-CLE14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-CLE15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-CLE2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-CLE3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-CLE4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-CLE5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-CLE6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-CLE7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-CLE8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-JAC10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-JAC14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-JAC15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-JAC17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-JAC18",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-JAC2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-JAC21",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-JAC24",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-JAC28",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-JAC3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13CLEJAC-JAC6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-DAL10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-DAL11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-DAL14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-DAL15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-DAL17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-DAL18",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-DAL21",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-DAL6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-DAL7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-DAL8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-NYG10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-NYG11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-NYG14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-NYG15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-NYG2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-NYG3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-NYG4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-NYG5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-NYG6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-NYG7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13DALNYG-NYG8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-GB10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-GB11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-GB14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-GB15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-GB17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-GB6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-GB7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-GB8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-MIN10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-MIN11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-MIN14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-MIN15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-MIN17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-MIN6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-MIN7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13GBMIN-MIN8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-LV10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-LV11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-LV14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-LV15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-LV17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-LV18",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-LV21",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-LV6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-LV8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-MIA10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-MIA11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-MIA14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-MIA15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-MIA2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-MIA3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-MIA4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-MIA5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-MIA6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-MIA7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13MIALV-MIA8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-DET10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-DET14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-DET15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-DET17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-DET18",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-DET21",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-DET24",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-DET28",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-DET3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-DET6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-NO10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-NO11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-NO14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-NO15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-NO2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-NO3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-NO4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-NO5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-NO6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-NO7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NODET-NO8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-NYJ10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-NYJ11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-NYJ14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-NYJ15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-NYJ2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-NYJ3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-NYJ4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-NYJ5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-NYJ6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-NYJ7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-NYJ8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-TEN10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-TEN11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-TEN14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-TEN15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-TEN17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-TEN18",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-TEN21",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-TEN6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-TEN7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13NYJTEN-TEN8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-CIN10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-CIN11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-CIN14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-CIN15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-CIN17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-CIN18",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-CIN21",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-CIN6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-CIN8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-TB10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-TB11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-TB14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-TB15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-TB2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-TB3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-TB4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-TB5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-TB6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-TB7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13TBCIN-TB8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-PHI10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-PHI11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-PHI14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-PHI15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-PHI17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-PHI18",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-PHI21",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-PHI3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-WAS10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-WAS11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-WAS14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-WAS15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-WAS2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-WAS3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-WAS4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-WAS5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-WAS6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-WAS7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP13WASPHI-WAS8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-DEN10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-DEN11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-DEN14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-DEN15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-DEN2",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-DEN3",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-DEN4",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-DEN5",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-DEN6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-DEN7",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-DEN8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-KC10",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-KC11",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-KC14",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-KC15",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-KC17",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-KC18",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-KC21",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-KC6",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLSPREAD-26SEP14DENKC-KC8",
+      "market_type": "spreads",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP09NESEA-24",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP09NESEA-30",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP09NESEA-36",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP09NESEA-46",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP09NESEA-54",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP09NESEA-60",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP09NESEA-66",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP10SFLAR-28",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP10SFLAR-34",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP10SFLAR-40",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP10SFLAR-50",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP10SFLAR-52",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP10SFLAR-58",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP10SFLAR-64",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP10SFLAR-70",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13ARILAC-26",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13ARILAC-29",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13ARILAC-35",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13ARILAC-41",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13ARILAC-49",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13ARILAC-53",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13ARILAC-59",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13ARILAC-65",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13ATLPIT-21",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13ATLPIT-27",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13ATLPIT-33",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13ATLPIT-45",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13ATLPIT-51",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13ATLPIT-57",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13ATLPIT-63",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13BALIND-28",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13BALIND-31",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13BALIND-37",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13BALIND-43",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13BALIND-55",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13BALIND-61",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13BALIND-67",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13BUFHOU-24",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13BUFHOU-30",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13BUFHOU-36",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13BUFHOU-54",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13BUFHOU-60",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13BUFHOU-66",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CHICAR-29",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CHICAR-35",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CHICAR-41",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CHICAR-47",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CHICAR-49",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CHICAR-53",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CHICAR-59",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CHICAR-65",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CHICAR-68",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CLEJAC-20",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CLEJAC-23",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CLEJAC-29",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CLEJAC-35",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CLEJAC-43",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CLEJAC-47",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CLEJAC-53",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13CLEJAC-59",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13DALNYG-28",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13DALNYG-34",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13DALNYG-40",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13DALNYG-50",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13DALNYG-52",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13DALNYG-58",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13DALNYG-64",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13DALNYG-70",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13GBMIN-25",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13GBMIN-31",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13GBMIN-37",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13GBMIN-49",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13GBMIN-55",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13GBMIN-61",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13GBMIN-67",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13MIALV-20",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13MIALV-23",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13MIALV-29",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13MIALV-35",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13MIALV-43",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13MIALV-47",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13MIALV-53",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13MIALV-59",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13NODET-27",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13NODET-33",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13NODET-39",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13NODET-45",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13NODET-49",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13NODET-57",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13NODET-63",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13NODET-69",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13NYJTEN-18",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13NYJTEN-24",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13NYJTEN-30",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13NYJTEN-42",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13NYJTEN-48",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13NYJTEN-54",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13NYJTEN-60",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13TBCIN-31",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13TBCIN-37",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13TBCIN-43",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13TBCIN-61",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13TBCIN-67",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13TBCIN-73",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13WASPHI-27",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13WASPHI-33",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13WASPHI-39",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13WASPHI-47",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13WASPHI-49",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13WASPHI-57",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13WASPHI-63",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP13WASPHI-69",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP14DENKC-22",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP14DENKC-28",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP14DENKC-34",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP14DENKC-52",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP14DENKC-58",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    },
+    {
+      "kalshi_ticker": "KXNFLTOTAL-26SEP14DENKC-64",
+      "market_type": "totals",
+      "reason": "exact_payoff_not_listed"
+    }
+  ],
+  "rejected_polymarket": [],
+  "pricing_ready": false,
+  "remaining": [
+    "Pinnacle payoff mapping and live observations",
+    "exceptional settlement basis policy",
+    "user risk caps"
+  ],
+  "combo_terms": {
+    "KXMVECROSSCATEGORY-SHARD1-": {
+      "maker_fee_rate": 0.035,
+      "fee_reference": "https://kalshi.com/docs/kalshi-fee-schedule.pdf#series=KXMVECROSSCATEGORY-SHARD1",
+      "price_ranges": [
+        {
+          "end": "0.0100",
+          "start": "0.0000",
+          "step": "0.0001"
+        },
+        {
+          "end": "0.9900",
+          "start": "0.0100",
+          "step": "0.0010"
+        },
+        {
+          "end": "1.0000",
+          "start": "0.9900",
+          "step": "0.0001"
+        }
+      ],
+      "grid_reference": "https://api.elections.kalshi.com/trade-api/v2/markets/KXMVECROSSCATEGORY-SHARD1-S20265B09DE8FC08-15BCF6B717A",
+      "grid_validation": "sampled_market_metadata; refresh_and_validate_market_before_live_execution",
+      "fee_changes": {
+        "series_fee_change_arr": [
+          {
+            "fee_multiplier": 1,
+            "fee_type": "quadratic_with_combo_maker_fees",
+            "id": "241259a0-3d5c-402c-b276-0e3eff53c091",
+            "scheduled_ts": "2026-08-20T09:05:00Z",
+            "series_ticker": "KXMVECROSSCATEGORY-SHARD1"
+          }
+        ]
+      },
+      "verified_at": 1788753371.603534,
+      "valid_until": 1788839771.603534
+    },
+    "KXMVECROSSCATEGORY0-SHARD1-": {
+      "maker_fee_rate": 0.0,
+      "fee_reference": "https://kalshi.com/docs/kalshi-fee-schedule.pdf#series=KXMVECROSSCATEGORY0-SHARD1",
+      "price_ranges": [
+        {
+          "end": "0.0100",
+          "start": "0.0000",
+          "step": "0.0001"
+        },
+        {
+          "end": "0.9900",
+          "start": "0.0100",
+          "step": "0.0010"
+        },
+        {
+          "end": "1.0000",
+          "start": "0.9900",
+          "step": "0.0001"
+        }
+      ],
+      "grid_reference": "https://api.elections.kalshi.com/trade-api/v2/markets/KXMVECROSSCATEGORY0-SHARD1-S20266DFD5D79268-C2DF69E37F4",
+      "grid_validation": "sampled_market_metadata; refresh_and_validate_market_before_live_execution",
+      "fee_changes": {
+        "series_fee_change_arr": []
+      },
+      "verified_at": 1788753371.825129,
+      "valid_until": 1788839771.825129
+    }
+  },
+  "sources": {
+    "data/raw/nfl_refresh_20260907_0400/kalshi_games.json": {
+      "sha256": "5fea356eec278f46a304c0917ad02be6e1ee6f5192d08d690532e803f503f60a",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXNFLGAME&status=open&limit=1000",
+      "retrieved_at": 1788753370.6592152
+    },
+    "data/raw/nfl_refresh_20260907_0400/kalshi_spreads.json": {
+      "sha256": "ff3d1ed510871d4d1564dc19673ce66e7195eea27735d3efb208087627517db0",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXNFLSPREAD&status=open&limit=1000",
+      "retrieved_at": 1788753370.776094
+    },
+    "data/raw/nfl_refresh_20260907_0400/kalshi_totals.json": {
+      "sha256": "4b3408b489b270d4d31bc2d5d4f09a791126df5909a20ab6b1d9e30f7eab72b5",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXNFLTOTAL&status=open&limit=1000",
+      "retrieved_at": 1788753370.890869
+    },
+    "data/raw/nfl_refresh_20260907_0400/series_KXNFLGAME.json": {
+      "sha256": "60181746fbcee33964dd1a72df7334dd5c2b2405bc748be30b4bd3ecfd0eff0c",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/series/KXNFLGAME",
+      "retrieved_at": 1788753371.001111
+    },
+    "data/raw/nfl_refresh_20260907_0400/series_KXNFLSPREAD.json": {
+      "sha256": "e73006418176ecacc44d336029cf8a9344715fafa4444ad0365f31b7f2d5df30",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/series/KXNFLSPREAD",
+      "retrieved_at": 1788753371.185258
+    },
+    "data/raw/nfl_refresh_20260907_0400/series_KXNFLTOTAL.json": {
+      "sha256": "fd19d589419497c464c4ad28969e209ac57509474475db960a901c66d2fc4fc5",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/series/KXNFLTOTAL",
+      "retrieved_at": 1788753371.435804
+    },
+    "data/raw/nfl_refresh_20260907_0400/series_KXMVECROSSCATEGORY-SHARD1.json": {
+      "sha256": "69e2b97fcd47acf40833752267a97573c4aef83aeabd902dea774b05cab362d8",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/series/KXMVECROSSCATEGORY-SHARD1",
+      "retrieved_at": 1788753371.603534
+    },
+    "data/raw/nfl_refresh_20260907_0400/series_KXMVECROSSCATEGORY0-SHARD1.json": {
+      "sha256": "055f5ab84c3c26e58867234aa0190dadaf26adecba63d6233d0a5a587c8ada77",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/series/KXMVECROSSCATEGORY0-SHARD1",
+      "retrieved_at": 1788753371.825129
+    },
+    "data/raw/nfl_refresh_20260907_0400/fees_KXNFLGAME.json": {
+      "sha256": "5d818f373fdc513e7260345ff9a86ff421fe54b37e699336f57960e45f91e18a",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/series/fee_changes?series_ticker=KXNFLGAME&show_historical=true",
+      "retrieved_at": 1788753371.094265
+    },
+    "data/raw/nfl_refresh_20260907_0400/fees_KXNFLSPREAD.json": {
+      "sha256": "81b907b41dbc485145213b86e133359ac2fab88a6c488d06ff0a2b2c50f5dca2",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/series/fee_changes?series_ticker=KXNFLSPREAD&show_historical=true",
+      "retrieved_at": 1788753371.282947
+    },
+    "data/raw/nfl_refresh_20260907_0400/fees_KXNFLTOTAL.json": {
+      "sha256": "1268648656ebd38dbc190eed52f77423fb714801077002d0086b22b0406b19de",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/series/fee_changes?series_ticker=KXNFLTOTAL&show_historical=true",
+      "retrieved_at": 1788753371.528746
+    },
+    "data/raw/nfl_refresh_20260907_0400/fees_KXMVECROSSCATEGORY-SHARD1.json": {
+      "sha256": "190f74901e9c1ea8faaa54b52e249b8886292a588922935373e3b371b072ff5b",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/series/fee_changes?series_ticker=KXMVECROSSCATEGORY-SHARD1&show_historical=true",
+      "retrieved_at": 1788753371.69747
+    },
+    "data/raw/nfl_refresh_20260907_0400/fees_KXMVECROSSCATEGORY0-SHARD1.json": {
+      "sha256": "d0c6c4f1d9bea7aacb4106d51a4aa583dc65f4250cfbdce9395fc00be5a8a22a",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/series/fee_changes?series_ticker=KXMVECROSSCATEGORY0-SHARD1&show_historical=true",
+      "retrieved_at": 1788753371.926978
+    },
+    "data/raw/nfl_refresh_20260907_0400/pm_week1.json": {
+      "sha256": "d706dbbf23c74d3b2778b6d1191aa304de7fdee9898388f236a77a0f615c31de",
+      "url": "https://gamma-api.polymarket.com/events?series_id=12185&event_week=1&closed=false&limit=100",
+      "retrieved_at": 1788753370.49598
+    },
+    "data/raw/nfl_refresh_20260907_0400/combo_KXMVECROSSCATEGORY-SHARD1-S20265B09DE8FC08-15BCF6B717A.json": {
+      "sha256": "dfb91d5e967c3b39dbbbb1dc9e2b6ae877c13b250a4ca27907018fdb14c490a7",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXMVECROSSCATEGORY-SHARD1-S20265B09DE8FC08-15BCF6B717A",
+      "retrieved_at": 1788753372.027792
+    },
+    "data/raw/nfl_refresh_20260907_0400/combo_KXMVECROSSCATEGORY0-SHARD1-S20266DFD5D79268-C2DF69E37F4.json": {
+      "sha256": "25509026faf5db7fb738463bf7a7161a39013bfc708a0395e98c78b13c119519",
+      "url": "https://api.elections.kalshi.com/trade-api/v2/markets/KXMVECROSSCATEGORY0-SHARD1-S20266DFD5D79268-C2DF69E37F4",
+      "retrieved_at": 1788753372.1333828
+    }
+  },
+  "polymarket_fee_rates": [
+    0.05
+  ],
+  "kalshi_taker_rates": [
+    0.07
+  ]
+}
